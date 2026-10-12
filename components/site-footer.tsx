@@ -63,7 +63,7 @@ export default function SiteFooter() {
     <footer className="bg-emerald-950 text-white">
       {/* Main footer */}
       <div className="px-5 pt-4 sm:px-6 sm:pt-20 lg:px-8">
-        <div className="grid gap-12 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:gap-10">
+        <div className="grid gap-6 grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 lg:gap-6">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-flex flex-col">
@@ -92,7 +92,7 @@ export default function SiteFooter() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-emerald-800 text-emerald-100 transition hover:border-lime-400 hover:bg-lime-400 hover:text-emerald-950"
+                    className="flex h-6 w-6 items-center justify-center rounded-full border border-emerald-800 text-emerald-100 transition hover:border-lime-400 hover:bg-lime-400 hover:text-emerald-950"
                   >
                     <Icon className="h-4 w-4" />
                   </a>
