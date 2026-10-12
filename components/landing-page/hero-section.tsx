@@ -18,7 +18,7 @@ export default function HeroSection() {
       {/* Hero Image */}
       <div className="absolute inset-0 -z-30">
         <Image
-          src="/images/hero.png"
+          src="/images/hero.jpg"
           alt="Gabriel playing professional football"
           fill
           priority
