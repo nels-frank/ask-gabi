@@ -26,12 +26,6 @@ export default function HeroSection() {
           className="object-cover object-[68%_center] sm:object-[60%_center] lg:object-[40%_center]"
         />
       </div>
-
-      {/* Deep Green Overlay */}
-      <div className="absolute inset-0 -z-20 bg-[#003d2b]/65" />
-
-      {/* Strong Left Gradient for Text */}
-
       {/* Bottom Gradient */}
       <div className="absolute inset-x-0 bottom-0 z-0 h-48 bg-gradient-to-t from-[#00271c] to-transparent" />
 
