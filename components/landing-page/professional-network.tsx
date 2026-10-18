@@ -128,7 +128,7 @@ export default function ProfessionalNetwork() {
         </div>
 
         {/* Closing CTA */}
-        <div className="relative mt-14 overflow-hidden rounded-[2rem] bg-emerald-950 px-6 py-10 sm:px-10 sm:py-12 lg:px-14">
+        <div className="relative mt-14 overflow-hidden rounded-md bg-emerald-950 px-6 py-10 sm:px-10 sm:py-12 lg:px-14">
           <div className="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full border-[35px] border-emerald-800/40" />
 
           <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">

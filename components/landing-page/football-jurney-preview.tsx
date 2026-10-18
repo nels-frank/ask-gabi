@@ -9,7 +9,7 @@ const journey = [
     location: "Nigeria",
     description:
       "My football journey began in Nigeria, where my foundation was built through development, discipline, and a growing ambition to play at the highest level.",
-    image: "/images/gabriel-obekpa/journey-nigeria.webp",
+    image: "/images/nigeria.jpg",
   },
   {
     number: "02",
@@ -64,7 +64,7 @@ export default function FootballJourneyPreview() {
           {journey.map((item) => (
             <article
               key={item.number}
-              className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="group overflow-hidden rounded-[1rem] border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               {/* Image */}
               <div className="relative aspect-[4/3] overflow-hidden bg-emerald-950">

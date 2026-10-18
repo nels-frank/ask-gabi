@@ -60,9 +60,9 @@ export default function MediaOnThePitch() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-base text-justify font-bold leading-7 text-slate-600 sm:text-lg sm:leading-8">
-              A closer look at Gabriel’s football journey - the match
+              A closer look at my football journey - the match
               moments, professional experiences and personal growth that
-              continue to shape his perspective on the game.
+              continue to shape my perspective on the game.
             </p>
           </div>
 
@@ -77,7 +77,7 @@ export default function MediaOnThePitch() {
           {mediaItems.map((item, index) => (
             <article
               key={item.title}
-              className={`group relative isolate min-h-[340px] overflow-hidden rounded-[2rem] bg-emerald-950 sm:min-h-[380px] ${item.className}`}
+              className={`group relative isolate min-h-[340px] overflow-hidden rounded-md bg-emerald-950 sm:min-h-[380px] ${item.className}`}
             >
               <Image
                 src={item.image}

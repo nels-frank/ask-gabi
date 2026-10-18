@@ -11,7 +11,7 @@ import {
 export default function FinalAskGabiCTA() {
   return (
     <section className="bg-white px-5 py-2 sm:px-6 sm:py-2 lg:px-8 lg:py-2">
-      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-[rem] bg-emerald-950 px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
+      <div className="relative mx-auto max-w-7xl overflow-hidden rounded-md bg-emerald-950 px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
         {/* Decorative background */}
         <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full border-[40px] border-emerald-800/40 sm:h-96 sm:w-96" />
         <div className="pointer-events-none absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-emerald-900/60 blur-2xl" />

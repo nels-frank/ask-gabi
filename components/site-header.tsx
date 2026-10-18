@@ -1,23 +1,25 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Menu, X, UserRound } from "lucide-react";
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Journey", href: "#journey" },
-  { label: "Mentorship", href: "#mentorship" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Journey", href: "/journey" },
+  { label: "Mentorship", href: "/mentorship" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#003d2b]/90 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-green-950 backdrop-blur-md">
       <div className="mx-auto flex h-[78px] w-full max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-10">
         
         {/* Logo */}
@@ -40,15 +42,15 @@ export default function SiteHeader() {
               key={item.label}
               href={item.href}
               className={`relative py-7 text-[15px] font-extrabold tracking-[0.01em] transition-colors duration-200 ${
-                index === 0
-                  ? "text-emerald-300"
-                  : "text-white hover:text-emerald-300"
-              }`}
+              pathname === item.href
+                ? "text-emerald-300"
+                : "text-white hover:text-emerald-300"
+            }`}
             >
               {item.label}
 
-              {index === 0 && (
-                <span className="absolute bottom-0 left-0 h-[3px] w-full rounded-full bg-emerald-400" />
+              {pathname === item.href && (
+              <span className="absolute bottom-0 left-0 h-[3px] w-full rounded-full bg-emerald-400" />
               )}
             </Link>
           ))}
@@ -89,7 +91,7 @@ export default function SiteHeader() {
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
                 className={`border-b border-white/10 py-4 text-[16px] font-extrabold ${
-                  index === 0
+                  pathname === item.href
                     ? "text-emerald-300"
                     : "text-white hover:text-emerald-300"
                 }`}

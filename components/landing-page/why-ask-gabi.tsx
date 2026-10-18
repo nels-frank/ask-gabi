@@ -47,7 +47,7 @@ export default function WhyAskGabi() {
           <div className="relative mx-auto w-full max-w-xl">
             <div className="absolute -bottom-3 -left-3 h-full w-full rounded-[2rem] bg-emerald-950/100 sm:-bottom-6 sm:-left-6" />
 
-            <div className="relative aspect-[2/2] overflow-hidden rounded-[2rem] bg-emerald-950">
+            <div className="relative aspect-[2/2] overflow-hidden rounded-[1rem] bg-emerald-950">
               <Image
                 src="/images/gabi.jpg"
                 alt="Gabriel Obekpa"

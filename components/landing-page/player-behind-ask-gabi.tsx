@@ -48,7 +48,7 @@ export default function PlayerBehindAskGabi() {
           </Link>
         </div>
        {/* Image container */}
-        <div className="relative aspect-[2/2] overflow-hidden rounded-[2rem] bg-emerald-950 sm:aspect-[2/1] lg:aspect-[3/2]">
+        <div className="relative aspect-[2/2] overflow-hidden rounded-md bg-emerald-950 sm:aspect-[2/1] lg:aspect-[3/2]">
         <Image
             src="/images/gabriel.jpg"
             alt="Gabriel Obekpa, professional footballer"

@@ -5,8 +5,6 @@ import HeroSection from "@/components/landing-page/hero-section";
 import MediaOnThePitch from "@/components/landing-page/media-on-the-pitch";
 import PlayerBehindAskGabi from "@/components/landing-page/player-behind-ask-gabi";
 import ProfessionalNetwork from "@/components/landing-page/professional-network";
-import SiteFooter from "@/components/site-footer";
-import SiteHeader from "@/components/site-header";
 import VisionMission from "@/components/landing-page/vision-mission";
 import WhatIWantToShare from "@/components/landing-page/what-i-want-to-share";
 import WhyAskGabi from "@/components/landing-page/why-ask-gabi";
@@ -15,18 +13,16 @@ import WhyAskGabi from "@/components/landing-page/why-ask-gabi";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#003d2b]">
-      <SiteHeader />
       <HeroSection />
       <PlayerBehindAskGabi />
       <FootballJourneyPreview />
       <WhyAskGabi />
       <FootballLessons />
-      <VisionMission />
+      {/* <VisionMission /> */}
       <WhatIWantToShare />
       <ProfessionalNetwork />
       <MediaOnThePitch />
       <FinalAskGabiCTA />
-      <SiteFooter />
     </main>
   );
 }
