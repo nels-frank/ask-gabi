@@ -144,16 +144,15 @@ export default function Journey() {
   const whatsappLink = "https://wa.me/"; // Add Gabriel's full international number.
 
   return (
-    <main className="min-h-screen overflow-hidden bg-slate-50">
-      {/* HERO */}
-      <section className="relative overflow-hidden rounded-2xl bg-slate-50 sm:rounded-3xl">
-        <div className="relative mx-auto max-w-7xl px-0 py-6 md:py-6 lg:px-10 lg:py-6">
-          <div className="absolute -right-2 -top-70 h-100 w-85 bg-green-600 blur-3xl md:bg-green-700 md:blur-3xl md:h-120 md:w-130 lg:bg-green-700 lg:blur-3xl lg:h-120 lg:w-130" />
-          <div className="absolute -bottom-160 -left-60 h-46 w-66 bg-green-700 blur-3xl md:-bottom-70 md:-left-60 md:h-96 md:w-66 md:bg-green-700 md:blur-3xl lg:bg-green-700 lg:blur-3xl" />
-        </div>
+    <main className="min-h-screen bg-slate-50">
+      {/* Contact introduction */}
+      <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-5 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
+      <div className="relative mx-auto max-w-7xl px-0 py-6 md:py-6 lg:px-10 lg:py-6">
+        <div className="absolute -right-2 -top-70 h-100 w-85 bg-green-600 blur-3xl md:bg-green-700 md:blur-3xl md:h-120 md:w-130 lg:bg-green-700 lg:blur-3xl lg:h-120 lg:w-130" />
+        <div className="absolute -bottom-160 -left-60 h-46 w-66 bg-green-700 blur-3xl md:-bottom-70 md:-left-60 md:h-96 md:w-66 md:bg-green-700 md:blur-3xl lg:bg-green-700 lg:blur-3xl" />
+      </div>
 
-        <div className="mt-14 mx-auto max-w-7xl px-6 py-8 md:px-10 lg:py-10">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-10">
+        <div className="relative grid items-center gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -171,31 +170,31 @@ export default function Journey() {
 
               <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
               
-              <p className="mt-4 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                 From Nigeria to professional football in Europe, my journey has
                 taught me valuable lessons about ambition, sacrifice, adaptation
                 and the realities of pursuing a football career abroad.
               </p>
 
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                 Along the way, I experienced situations that made me realise how
                 important it is for young players to ask questions and understand
                 the opportunities they are pursuing.
               </p>
 
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                 Is it a trial or a guaranteed contract? Who is arranging the
                 opportunity? What costs are involved? Are the terms clear?
               </p>
 
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                 These experiences inspired me to create ASK GABI; a platform where
                 young footballers can ask questions, learn from my journey and
                 find qualified professional support when they need expertise
                 beyond my own experience.
               </p>
 
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                 You don’t need to know everything. You need access to people who do.
               </p>
 
@@ -207,7 +206,7 @@ export default function Journey() {
                       <h4 className="text-lg font-bold text-slate-900 sm:text-xl">
                         One lesson that stayed with me
                       </h4>
-                      <p className="mt-2 text-justify text-sm font-bold leading-7 text-slate-600 sm:text-base sm:leading-8">
+                      <p className="mt-2 text-justify text-l font-bold leading-7 text-slate-600 sm:text-base sm:leading-8">
                         Talent can open a door. Discipline, adaptability and
                         informed decisions help you navigate what comes next.
                       </p>
@@ -220,7 +219,7 @@ export default function Journey() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-             className="flex justify-center lg:justify-end mt-10 md:mt-10"
+             className="md:flex justify-center lg:justify-end mt-10 md:mt-10"
             >
   
               <div className="relative h-120 w-84 md:h-155 md:w-155 lg:h-155 lg:w-124">
@@ -237,13 +236,11 @@ export default function Journey() {
                 </div>
               </div>
             </motion.div>
-          </div>
         </div>
       </section>
 
       {/* CAREER TIMELINE */}
-      <section id="career-timeline" className="mt-4 px-3 py-3 md:px-10 md:mb-14 lg:px-16 lg:mb-16">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-4 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
           <div className="border-b border-slate-200 bg-slate-50 p-5 md:p-8">
             <div className="mb-2 flex items-center gap-3">
               <div className="rounded-lg bg-green-600 p-2">
@@ -254,11 +251,11 @@ export default function Journey() {
               </h2>
             </div>
 
-            <h3 className="text-xl font-bold tracking-tight text-green-700 sm:text-2xl md:text-3xl">
+            <h3 className="text-xl font-extrabold tracking-tight text-green-700 sm:text-2xl md:text-3xl">
               Every club taught me something
             </h3>
 
-            <p className="mt-2 max-w-3xl text-justify text-sm font-bold leading-7 text-slate-500 sm:text-base sm:leading-8">
+            <p className="mt-2 max-w-3xl text-justify text-xl font-bold leading-7 text-slate-500 sm:text-base sm:leading-8">
               Different countries, different expectations and experiences
               shaped my understanding of professional football.
             </p>
@@ -299,7 +296,7 @@ export default function Journey() {
                       {item.country} · {item.period}
                     </p>
 
-                    <p className="mt-2 text-justify text-sm font-bold leading-7 text-slate-500 sm:text-base sm:leading-8">
+                    <p className="mt-2 text-justify text-l font-bold leading-7 text-slate-500 sm:text-base sm:leading-8">
                       {item.description}
                     </p>
                   </div>
@@ -321,7 +318,7 @@ export default function Journey() {
                 <h3 className="text-xl font-bold text-slate-900">
                   More than club names
                 </h3>
-                <p className="mt-2 text-justify text-sm font-bold leading-7 text-slate-600 sm:text-base sm:leading-8">
+                <p className="mt-2 text-justify text-l font-bold leading-7 text-slate-600 sm:text-base sm:leading-8">
                   Each stage brought different expectations and decisions.
                   These experiences helped me appreciate the importance of
                   preparation, adaptability and understanding the professional
@@ -330,11 +327,9 @@ export default function Journey() {
               </div>
             </div>
           </div>
-        </div>
       </section>
 
-      <section id="career-timeline" className="mt-4 px-3 py-3 md:px-10 md:mb-14 lg:px-16 lg:mb-16">
-        <div className="mx-auto max-w-7xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-4 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
           <div className="border-b border-slate-200 bg-slate-50 p-5 md:p-8">
             <div className="mb-2 flex items-center gap-3">
                 <div className="rounded-lg bg-green-600 p-2">
@@ -345,11 +340,11 @@ export default function Journey() {
               </h2>
             </div>
       
-                <h3 className="text-xl font-bold tracking-tight text-green-700 sm:text-2xl md:text-3xl">
+                <h3 className="text-2xl font-bold tracking-tight text-green-700 sm:text-2xl md:text-3xl">
                   From Africa to Europe
                 </h3>
       
-                <p className="mt-2 max-w-3xl text-justify text-sm font-bold leading-7 text-slate-500 sm:text-base sm:leading-8">
+                <p className="mt-2 max-w-3xl text-justify text-xl font-bold leading-7 text-slate-500 sm:text-base sm:leading-8">
                   From my beginnings in Nigeria to professional football across
                   Europe, every chapter has brought a new challenge, experience,
                   and opportunity to grow.
@@ -357,8 +352,8 @@ export default function Journey() {
               </div>
       
               {/* Journey Cards */}
-              <div className="p-4 md:p-8">
-            <div className="grid gap-4 lg:grid-cols-2">
+            <div className="p-0 md:p-8">
+            <div className="grid gap-8 lg:grid-cols-2">
                 {journey.map((item) => (
                   <article
                     key={item.number}
@@ -375,7 +370,6 @@ export default function Journey() {
                       />
       
                       <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-transparent to-transparent" />
-      
                       <span className="absolute left-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-lime-400 text-sm font-bold text-emerald-950">
                         {item.number}
                       </span>
@@ -392,7 +386,7 @@ export default function Journey() {
                         {item.title}
                       </h3>
       
-                      <p className="mt-3 text-m font-bold text-justify leading-6 text-slate-600">
+                      <p className="mt-3 text-l font-bold text-justify leading-6 text-slate-600">
                         {item.description}
                       </p>
                     </div>
@@ -400,7 +394,6 @@ export default function Journey() {
                 ))}
               </div>
             </div>
-          </div>
           </section>
 
       {/* LESSONS */}
@@ -417,12 +410,12 @@ export default function Journey() {
 
           <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
 
-          <p className="mt-4 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-2 max-w-3xl text-justify text-xl font-bold leading-7 text-slate-500 sm:text-xl sm:leading-8">
             A football career involves more than talent and opportunity. These
             are some of the lessons I carry from my experiences.
           </p>
 
-          <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
             {lessons.map((lesson, index) => {
               const Icon = lesson.icon;
 
@@ -444,11 +437,11 @@ export default function Journey() {
                     </span>
                   </div>
 
-                  <h3 className="mt-4 text-lg font-bold leading-7 text-slate-900">
+                  <h3 className="mt-3 text-xl font-bold text-slate-950">
                     {lesson.title}
                   </h3>
 
-                  <p className="mt-3 text-justify text-sm font-bold leading-7 text-slate-500 md:text-base md:leading-8">
+                  <p className="mt-3 text-l font-bold text-justify leading-6 text-slate-600">
                     {lesson.description}
                   </p>
                 </motion.article>

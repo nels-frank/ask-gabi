@@ -117,13 +117,13 @@ export default function GalleryPage() {
   return (
     <main className="min-h-screen overflow-hidden bg-slate-50">
       {/* INTRODUCTION */}
-      <section className="relative mx-auto max-w-7xl overflow-hidden rounded-2xl bg-white px-4 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-2 md:py-0 lg:py-0 lg:mt-21">
+      <section className="relative mx-auto max-w-7xl overflow-hidden rounded-2xl bg-white px-3 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-2 md:py-0 lg:py-0 lg:mt-21">
         <div className="relative mx-auto max-w-7xl px-0 py-6 md:py-6 lg:px-10 lg:py-6">
           <div className="absolute -right-2 -top-70 h-100 w-85 bg-green-600 blur-3xl md:bg-green-700 md:blur-3xl md:h-120 md:w-130 lg:bg-green-700 lg:blur-3xl lg:h-100 lg:w-130" />
           <div className="absolute -bottom-160 -left-60 h-46 w-66 bg-green-700 blur-3xl md:-bottom-70 md:-left-60 md:h-96 md:w-66 md:bg-green-700 md:blur-3xl lg:bg-green-700 lg:blur-3xl" />
         </div>
 
-        <div className="relative mx-auto mt-6 max-w-7xl px-3 py-14 md:px-10 md:py-16 lg:py-0">
+        <div className="relative mx-auto mt-6 max-w-7xl px-1 py-14 md:px-10 md:py-16 lg:py-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -135,19 +135,19 @@ export default function GalleryPage() {
               Ask Gabi
             </div>
 
-            <h1 className="text-left text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-5xl">
+            <h1 className="text-left text-2xl font-bold tracking-tight text-gray-900 lg:text-3xl md:text-3xl">
               My Football Journey in Pictures
             </h1>
 
             <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
 
-            <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 lg:text-xl sm:leading-8">
               Every match, every challenge and every experience has been part
               of my journey. Welcome to my gallery, where I share moments from
               my life in professional football, both on and off the pitch.
             </p>
 
-            <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
               These pictures and videos capture the experiences behind ASK GABI
               and the lessons that continue to shape my career.
             </p>
@@ -156,10 +156,10 @@ export default function GalleryPage() {
           {/* MEDIA COUNTS */}
           <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
             {[
-              { label: "Landscape Photos", count: "30", icon: Images },
-              { label: "Portrait Photos", count: "23", icon: Camera },
-              { label: "Short Clips", count: "10", icon: Play },
-              { label: "Highlights", count: "04", icon: Video },
+              { label: "Landscape Photos", count: "24", icon: Images },
+              { label: "Portrait Photos", count: "32", icon: Camera },
+              { label: "Short Clips", count: "09", icon: Play },
+              { label: "Highlights", count: "08", icon: Video },
             ].map((item, index) => {
               const Icon = item.icon;
 
@@ -179,7 +179,7 @@ export default function GalleryPage() {
                       {item.count}
                     </span>
                   </div>
-                  <p className="mt-3 text-sm font-bold text-slate-600">
+                  <p className="mt-3 text-l font-bold text-slate-600">
                     {item.label}
                   </p>
                 </motion.div>
@@ -190,8 +190,8 @@ export default function GalleryPage() {
       </section>
 
       {/* GALLERY */}
-      <section className="mx-auto mt-16 max-w-7xl px-4 py-10 md:px-8">
-        <div className="mb-6">
+      <section className="mx-auto mt-6 max-w-7xl px-4 py-10 md:px-8">
+        <div className="mb-2">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
             <Images className="h-4 w-4" />
             Moments That Matter
@@ -201,7 +201,7 @@ export default function GalleryPage() {
             Explore the Gallery
           </h2>
           <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
-          <p className="mt-3 max-w-3xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
             Browse match moments, portraits, short clips and career highlights.
             Select a category to explore.
           </p>
@@ -238,7 +238,7 @@ export default function GalleryPage() {
         {filteredPhotos.length > 0 && (
           <div className="mb-12">
             {activeCategory === "All Media" && (
-              <h3 className="mb-5 text-xl font-bold text-slate-900 md:text-2xl">
+              <h3 className="mb-5 text-2xl font-bold text-slate-900 md:text-2xl">
                 Photos
               </h3>
             )}
@@ -288,7 +288,7 @@ export default function GalleryPage() {
         {filteredVideos.length > 0 && (
           <div className="mb-12">
             {activeCategory === "All Media" && (
-              <h3 className="mb-5 text-xl font-bold text-slate-900 md:text-2xl">
+              <h3 className="mb-5 text-2xl font-bold text-slate-900 md:text-2xl">
                 Videos &amp; Highlights
               </h3>
             )}
@@ -344,10 +344,9 @@ export default function GalleryPage() {
       </section>
 
       {/* CLOSING CTA */}
-      <section className="px-3 py-8 md:px-8 md:py-12">
-        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-green-950 px-3 py-10 text-white sm:px-10 md:py-14">
+      <section className="px-3 py-2 md:px-8 md:py-12">
+        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-0xl bg-green-950 px-3 py-4 text-white sm:px-10 md:py-14">
           <div className="pointer-events-none absolute -right-20 -top-24 h-64 w-64 rounded-full bg-green-600/40 blur-3xl" />
-
           <div className="relative flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <div className="max-w-6xl">
               <p className="text-xl font-bold uppercase tracking-[0.2em] text-lime-300">

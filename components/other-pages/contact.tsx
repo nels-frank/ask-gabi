@@ -73,13 +73,13 @@ export default function ContactPage() {
               Contact ASK GABI
             </span>
 
-            <h1 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight text-green-950 lg:text-4xl md:text-4xl">
+            <h1 className="mt-2 text-3xl font-extrabold leading-tight tracking-tight text-green-950 lg:text-4xl md:text-4xl">
               Your next step could start with a conversation.
             </h1>
 
             <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
 
-            <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
               Every football journey comes with questions. Whether you are
               an aspiring player looking for direction or someone who wants
               to learn from the professional game, ASK GABI is here to help
@@ -91,7 +91,7 @@ export default function ContactPage() {
                 href="#contact-form"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-green-950 px-5 py-3 text-sm font-bold text-white transition hover:bg-green-900 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2"
               >
-                Send a Message
+                Send Message
                 <ArrowRight size={17} />
               </a>
 
@@ -130,11 +130,11 @@ export default function ContactPage() {
                   The ASK GABI Mission
                 </p>
 
-                <h2 className="mt-3 text-xl font-extrabold leading-snug lg:text-3xl md:text-2xl">
+                <h2 className="mt-3 text-xl text-justify font-extrabold leading-snug lg:text-3xl md:text-2xl">
                   Better information. Better decisions. A stronger journey.
                 </h2>
 
-                <p className="mt-4 text-sm text-justify font-bold leading-7 text-green-50/85 sm:text-base">
+                <p className="mt-4 text-l text-justify font-bold leading-7 text-green-50/85 sm:text-base">
                   Football talent matters, but knowing how to navigate the
                   journey matters too. Ask your questions, seek clarity,
                   and keep moving forward.
@@ -144,7 +144,7 @@ export default function ContactPage() {
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
                     <ShieldCheck size={21} className="text-lime-300" />
                   </div>
-                  <p className="text-sm font-semibold leading-6 text-white/90">
+                  <p className="text-l font-semibold leading-6 text-white/90">
                     A space to learn, connect, and grow through football
                     experience.
                   </p>
@@ -161,13 +161,13 @@ export default function ContactPage() {
         className="mx-auto mt-4 max-w-7xl px-4 py-10 md:px-8"
       >
         <div className="mb-6">
-          <p className="text-sm font-extrabold uppercase tracking-[0.16em] text-green-800">
+          <p className="text-l font-extrabold uppercase tracking-[0.16em] text-green-800">
             Let&apos;s Connect
           </p>
           <h2 className="mt-2 text-2xl font-extrabold text-green-950 sm:text-3xl">
             Choose how to reach out
           </h2>
-          <p className="mt-3 max-w-3xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
             Have a question about your football journey? Start with the
             option that works best for you.
           </p>
@@ -183,10 +183,10 @@ export default function ContactPage() {
               <MessageCircle size={24} />
             </div>
 
-            <h3 className="mt-4 text-xl font-extrabold text-green-950">
+            <h3 className="mt-4 text-2xl font-extrabold text-green-950">
               Ask a Football Question
             </h3>
-            <p className="mt-2 text-sm text-justify font-bold leading-6 text-gray-600 sm:text-base sm:leading-7">
+            <p className="mt-2 text-xl text-justify font-bold leading-6 text-gray-600 sm:text-base sm:leading-7">
               Share a challenge, ask for guidance, or seek insight into
               life and decisions in professional football.
             </p>
@@ -210,10 +210,10 @@ export default function ContactPage() {
               <Send size={23} />
             </div>
 
-            <h3 className="mt-4 text-xl font-extrabold text-green-950">
+            <h3 className="mt-4 text-2xl font-extrabold text-green-950">
               Collaborations &amp; Enquiries
             </h3>
-            <p className="mt-2 text-sm text-justify font-bold leading-6 text-gray-600 sm:text-base sm:leading-7">
+            <p className="mt-2 text-xl text-justify font-bold leading-6 text-gray-600 sm:text-base sm:leading-7">
               Interested in working with ASK GABI, sharing an opportunity,
               or discussing a football-related initiative? Get in touch.
             </p>
@@ -245,7 +245,7 @@ export default function ContactPage() {
               Tell us what is on your mind.
             </h2>
 
-            <p className="mt-4 text-sm font-bold text-justify leading-7 text-green-50/85 sm:text-base">
+            <p className="mt-4 text-l font-bold text-justify leading-7 text-green-50/85 sm:text-base">
               You do not need to have everything figured out before asking
               a question. Give us a little context about what you need, and
               let&apos;s start from there.
@@ -258,7 +258,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-extrabold">Clear communication</h3>
-                  <p className="mt-1 text-sm font-bold text-justify leading-6 text-green-50/75">
+                  <p className="mt-1 text-l font-bold text-justify leading-6 text-green-50/75">
                     Explain your question or enquiry in your own words.
                   </p>
                 </div>
@@ -270,7 +270,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-extrabold">Send it when ready</h3>
-                  <p className="mt-1 text-sm text-justify font-bold leading-6 text-green-50/75">
+                  <p className="mt-1 text-l text-justify font-bold leading-6 text-green-50/75">
                     Your message will open in WhatsApp for you to review
                     and send.
                   </p>
@@ -283,7 +283,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-extrabold">Share thoughtfully</h3>
-                  <p className="mt-1 text-sm font-bold text-justify leading-6 text-green-50/75">
+                  <p className="mt-1 text-l font-bold text-justify leading-6 text-green-50/75">
                     Only include information relevant to your enquiry.
                   </p>
                 </div>
@@ -299,7 +299,7 @@ export default function ContactPage() {
               <h2 className="mt-3 text-2xl font-extrabold text-green-950 sm:text-3xl">
                 Send your message
               </h2>
-              <p className="mt-2 text-sm font-bold text-justify leading-6 text-gray-600 sm:text-base">
+              <p className="mt-2 text-l font-bold text-justify leading-6 text-gray-600 sm:text-base">
                 Complete the details below to prepare your WhatsApp message.
               </p>
             </div>
@@ -309,7 +309,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="contact-name"
-                    className="mb-2 block text-sm font-bold text-gray-800"
+                    className="mb-2 block text-xl font-bold text-gray-800"
                   >
                     Your Name <span className="text-red-600">*</span>
                   </label>
@@ -330,7 +330,7 @@ export default function ContactPage() {
                 <div>
                   <label
                     htmlFor="contact-email"
-                    className="mb-2 block text-sm font-bold text-gray-800"
+                    className="mb-2 block text-xl font-bold text-gray-800"
                   >
                     Email Address{" "}
                     <span className="font-medium text-gray-400">
@@ -354,7 +354,7 @@ export default function ContactPage() {
               <div>
                 <label
                   htmlFor="contact-topic"
-                  className="mb-2 block text-sm font-bold text-gray-800"
+                  className="mb-2 block text-xl font-bold text-gray-800"
                 >
                   What would you like to discuss?
                 </label>
@@ -378,7 +378,7 @@ export default function ContactPage() {
               <div>
                 <label
                   htmlFor="contact-message"
-                  className="mb-2 block text-sm font-bold text-gray-800"
+                  className="mb-2 block text-xl font-bold text-gray-800"
                 >
                   Your Message <span className="text-red-600">*</span>
                 </label>
@@ -413,7 +413,7 @@ export default function ContactPage() {
                 <ArrowRight size={18} />
               </button>
 
-              <p className="text-xs font-bold text-justify leading-5 text-gray-500">
+              <p className="text-l font-bold text-justify leading-5 text-gray-500">
                 WhatsApp will open with your message prepared. You can review
                 it before sending. This form does not send or store your
                 message on this website.

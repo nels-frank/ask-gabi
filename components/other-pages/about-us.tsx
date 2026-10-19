@@ -12,110 +12,132 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <main className="min-h-screen bg-slate-50">
-      {/* INTRODUCTION */}
-      <section className="relative overflow-hidden rounded-2xl bg-slate-50 sm:rounded-3xl">
-        <div className="relative mx-auto max-w-7xl px-0 py-6 md:py-6 lg:px-10 lg:py-6">
-          <div className="absolute -right-2 -top-70 h-100 w-85 bg-green-600 blur-3xl md:bg-green-700 md:blur-3xl md:h-120 md:w-130 lg:bg-green-700 lg:blur-3xl lg:h-120 lg:w-130" />
-          <div className="absolute -bottom-160 -left-60 h-46 w-66 bg-green-700 blur-3xl md:-bottom-70 md:-left-60 md:h-96 md:w-66 md:bg-green-700 md:blur-3xl lg:bg-green-700 lg:blur-3xl" />
-        </div>
+      {/* Contact introduction */}
+      <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-5 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
+      <div className="relative mx-auto max-w-7xl px-0 py-6 md:py-6 lg:px-10 lg:py-6">
+        <div className="absolute -right-2 -top-70 h-100 w-85 bg-green-600 blur-3xl md:bg-green-700 md:blur-3xl md:h-120 md:w-130 lg:bg-green-700 lg:blur-3xl lg:h-120 lg:w-130" />
+        <div className="absolute -bottom-160 -left-60 h-46 w-66 bg-green-700 blur-3xl md:-bottom-70 md:-left-60 md:h-96 md:w-66 md:bg-green-700 md:blur-3xl lg:bg-green-700 lg:blur-3xl" />
+      </div>
 
-        <div className="mt-14 mx-auto max-w-7xl px-6 py-8 md:px-10 lg:py-10">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-10">
-            {/* Introduction */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-              className="mb-2 text-left"
-            >
-              <div className="mb-10 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
-                <Code2 className="h-4 w-4" />
-                Ask Gabi
-              </div>
-
-              <h1 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-5xl">
-                About Me
-              </h1>
-
-              <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
-
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
-                I am Gabriel Obekpa, a Nigerian professional footballer
-                and the founder of ASK GABI. My journey through
-                professional football has taught me lessons that go
-                far beyond the pitch.
-              </p>
-
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
-                I created ASK GABI to share those lessons and help
-                young African footballers make better - informed
-                decisions about their careers.
-              </p>
-
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
-                I realised that talented footballers can face
-                difficult situations not because they lack ability,
-                but because they lack access to reliable information.
-              </p>
-
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
-                I have experienced situations I would have approached
-                differently if I had understood more at the time.
-                ASK GABI is my way of sharing those experiences and
-                helping young players become better informed.
-              </p>
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
-                I do not claim to have every answer. I believe in
-                learning, asking questions and recognising the
-                importance of informed decisions.
-              </p>
-
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
-               You don't need to know everything. You need to ask
-               questions, keep learning and make informed decisions.
-              </p>
-
-              <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
-              ASK GABI was created to turn real experiences into
-              useful knowledge for the next generation of footballers.
-              </p>
-            </motion.div>
-
-            {/* Profile Picture */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7, delay: 0.15 }}
-              className="flex justify-center lg:justify-end mt-10 md:mt-10"
-            >
-              <div className="relative h-120 w-84 md:h-135 md:w-135 lg:h-155 lg:w-124">
-                <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
-
-                <div className="relative h-120 w-82 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-135 md:w-135 lg:h-155 lg:w-124">
-                  <Image
-                    src="/images/about-us.jpg"
-                    alt="Gabriel Obekpa"
-                    fill
-                    className="object-cover object-bottom object-top"
-                    priority
-                  />
-                </div>
-              </div>
-            </motion.div>
+      <div className="relative grid items-center gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
+        {/* Introduction */}
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          className="mb-2 text-left lg:col-start-1 lg:row-start-1"
+        >
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
+            <Code2 className="h-4 w-4" />
+            Ask Gabi
           </div>
-        </div>
-      </section>
+
+          <h1 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-3xl">
+            About Me
+          </h1>
+
+          <div className="mb-10 mt-2 h-1 w-16 rounded-full bg-green-950" />
+
+          {/* Profile Picture: Mobile and Tablet */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="mt-8 md:my-8 flex justify-center lg:hidden"
+          >
+            <div className="relative h-120 w-84 md:h-135 md:w-135">
+              <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
+
+              <div className="relative h-120 w-82 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-135 md:w-135">
+                <Image
+                  src="/images/about-us.jpg"
+                  alt="Gabriel Obekpa"
+                  fill
+                  className="object-cover object-bottom"
+                  priority
+                />
+              </div>
+            </div>
+          </motion.div>
+
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+            I am Gabriel Obekpa, a Nigerian professional footballer
+            and the founder of ASK GABI. My journey through
+            professional football has taught me lessons that go
+            far beyond the pitch.
+          </p>
+
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+            I created ASK GABI to share those lessons and help
+            young African footballers make better-informed
+            decisions about their careers.
+          </p>
+
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+            I realised that talented footballers can face
+            difficult situations not because they lack ability,
+            but because they lack access to reliable information.
+          </p>
+
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+            I have experienced situations I would have approached
+            differently if I had understood more at the time.
+            ASK GABI is my way of sharing those experiences and
+            helping young players become better informed.
+          </p>
+
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+            I do not claim to have every answer. I believe in
+            learning, asking questions and recognxising the
+            importance of informed decisions.
+          </p>
+
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+            You don't need to know everything. You need to ask
+            questions, keep learning and make informed decisions.
+          </p>
+
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+            ASK GABI was created to turn real experiences into
+            useful knowledge for the next generation of footballers.
+          </p>
+        </motion.div>
+
+        {/* Profile Picture: Desktop */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 0.15 }}
+          className="hidden justify-center lg:col-start-2 lg:row-start-1 lg:flex lg:justify-end"
+        >
+          <div className="relative h-155 w-124">
+            <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
+
+            <div className="relative h-155 w-124 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl">
+              <Image
+                src="/images/about-us.jpg"
+                alt="Gabriel Obekpa"
+                fill
+                className="object-cover object-bottom"
+                priority
+              />
+            </div>
+          </div>
+        </motion.div>
+
+      </div>
+    </section>
 
       {/* PERSONAL STORY */}
       <section className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-        <div className="mt-4 mx-auto max-w-7xl px-3 py-4 md:px-8">
+        <div className="mt-10 mx-auto max-w-7xl px-3 py-4 md:px-8 md:mt-20 lg:mt-20">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             className="text-left order-1 lg:order-2 mb-8"
           >
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-4 py-1 text-sm font-bold text-white">
             <Code2 className="h-4 w-4" />
               My Story
             </div>
@@ -147,7 +169,7 @@ export default function AboutUs() {
                     A Dream That Became a Learning Experience
                   </h3>
 
-                  <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                     Like many young Nigerian footballers, I grew up
                     dreaming of becoming a professional and playing
                     in Europe. I was naturally a creative midfielder
@@ -155,7 +177,7 @@ export default function AboutUs() {
                     making the decisive pass.
                   </p>
 
-                  <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                     My opportunity to move to Europe came through
                     Serbia. My family made significant financial
                     sacrifices to support the journey. We believed
@@ -164,14 +186,14 @@ export default function AboutUs() {
                     prove myself through what was effectively a trial.
                   </p>
 
-                  <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                     That experience changed how I look at football
                     opportunities. It taught me to ask questions,
                     understand the details and never let excitement
                     replace careful judgement.
                   </p>
 
-                  <p className="mt-3 max-w-4xl text-justify text-base font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                     I also learned the importance of discipline,
                     adaptability and continuous growth. These
                     experiences shaped not only my approach to
@@ -191,7 +213,7 @@ export default function AboutUs() {
                           How I See Football
                         </h3>
 
-                        <p className="text-sm text-justify font-bold leading-7 md:text-base md:leading-8 text-slate-600">
+                        <p className="text-xl text-justify font-bold leading-7 md:text-base md:leading-8 text-slate-600">
                           Talent can open a door. Discipline,
                           adaptability and informed decisions help
                           you navigate what comes next.
@@ -214,7 +236,7 @@ export default function AboutUs() {
                       Where I Am Today
                     </h3>
 
-                    <p className="text-sm text-justify font-bold leading-7 md:text-base md:leading-8 text-slate-600">
+                    <p className="text-l text-justify font-bold leading-7 md:text-base md:leading-8 text-slate-600">
                       Today, I remain focused on growing as a
                       professional footballer while using my
                       experiences to create something meaningful
@@ -253,7 +275,7 @@ export default function AboutUs() {
                 Where we want to go
               </h3>
 
-              <p className="mt-5 text-base leading-7 text-justify font-bold text-slate-600 sm:text-lg sm:leading-8">
+              <p className="mt-5 text-xl leading-7 text-justify font-bold text-slate-600 sm:text-lg sm:leading-8">
                 To become a trusted global football platform that
                 empowers players with the knowledge, guidance and
                 opportunities they need to navigate their careers,
@@ -271,7 +293,7 @@ export default function AboutUs() {
                 What we aim to do
               </h3>
 
-              <p className="mt-5 text-base leading-7 text-justify font-bold text-white sm:text-lg sm:leading-8">
+              <p className="mt-5 text-l leading-7 text-justify font-bold text-white sm:text-lg sm:leading-8">
                 To educate, guide and support African footballers,
                 especially Nigerian players, through trusted
                 knowledge, real-life experiences and access to
