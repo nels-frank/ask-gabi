@@ -157,7 +157,7 @@ export default function Journey() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
-               className="mb-2 text-left"
+               className="mb-2 text-left lg:col-start-1 lg:row-start-1"
             >
               <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
                 <BiFootball className="h-4 w-4" />
@@ -169,6 +169,28 @@ export default function Journey() {
               </h1>
 
               <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
+
+              {/* Profile Picture: Mobile and Tablet */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7, delay: 0.15 }}
+                className="my-8 flex justify-center lg:hidden"
+              >
+                <div className="relative h-120 w-76 md:h-155 md:w-155">
+                  <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
+                  <div className="relative h-120 w-75 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-155 md:w-155">
+                    <Image
+                      src="/images/journeymenu.jpg"
+                      alt="Gabriel Obekpa reflecting on his football journey"
+                      fill
+                      priority
+                      sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 456px"
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+              </motion.div>
               
               <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
                 From Nigeria to professional football in Europe, my journey has
@@ -215,16 +237,16 @@ export default function Journey() {
                 </div>
             </motion.div>
 
+            {/* Profile Picture: Desktop */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-             className="md:flex justify-center lg:justify-end mt-10 md:mt-10"
+              className="hidden justify-center lg:col-start-2 lg:row-start-1 lg:flex lg:justify-end"
             >
-  
-              <div className="relative h-120 w-84 md:h-155 md:w-155 lg:h-155 lg:w-124">
+              <div className="relative h-155 w-124">
                 <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
-                 <div className="relative h-120 w-82 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-155 md:w-155 lg:h-155 lg:w-124">
+                <div className="relative h-155 w-124 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl">
                   <Image
                     src="/images/journeymenu.jpg"
                     alt="Gabriel Obekpa reflecting on his football journey"

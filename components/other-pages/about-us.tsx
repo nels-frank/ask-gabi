@@ -19,7 +19,7 @@ export default function AboutUs() {
         <div className="absolute -bottom-160 -left-60 h-46 w-66 bg-green-700 blur-3xl md:-bottom-70 md:-left-60 md:h-96 md:w-66 md:bg-green-700 md:blur-3xl lg:bg-green-700 lg:blur-3xl" />
       </div>
 
-      <div className="relative grid items-center gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
+      <div className="relative grid min-w-0 items-center gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
         {/* Introduction */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -43,12 +43,12 @@ export default function AboutUs() {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="mt-8 md:my-8 flex justify-center lg:hidden"
+            className="my-6 flex w-full min-w-0 justify-center md:my-8 lg:hidden"
           >
-            <div className="relative h-120 w-84 md:h-135 md:w-135">
+            <div className="relative h-[26rem] w-full max-w-[19rem] sm:h-[29rem] sm:max-w-[21rem] md:h-[32rem] md:max-w-[24rem]">
               <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
 
-              <div className="relative h-120 w-82 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-135 md:w-135">
+              <div className="relative h-full w-full overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl">
                 <Image
                   src="/images/about-us.jpg"
                   alt="Gabriel Obekpa"
@@ -129,7 +129,7 @@ export default function AboutUs() {
     </section>
 
       {/* PERSONAL STORY */}
-      <section className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <section className="flex min-w-0 flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div className="mt-10 mx-auto max-w-7xl px-3 py-4 md:px-8 md:mt-20 lg:mt-20">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -152,8 +152,8 @@ export default function AboutUs() {
             <div className="relative overflow-hidden rounded-2xl bg-white border border-slate-200 shadow-sm">
               <div className="p-4 md:p-6 lg:p-4 lg:pl-10">
                 {/* Story Image */}
-                <div className="relative mb-6 flex justify-center lg:absolute lg:right-10 lg:top-30 lg:mb-0">
-                  <div className="relative h-120 w-84 overflow-hidden rounded-2xl border-4 border-white shadow-xl md:h-150 md:w-150 lg:h-140 lg:w-122">
+                <div className="relative mb-6 flex w-full min-w-0 justify-center lg:absolute lg:right-10 lg:top-30 lg:mb-0 lg:w-auto">
+                  <div className="relative h-[26rem] w-full max-w-[20rem] overflow-hidden rounded-2xl border-4 border-white shadow-xl sm:h-[29rem] sm:max-w-[22rem] md:h-[32rem] md:max-w-[24rem] lg:h-140 lg:w-122 lg:max-w-none">
                     <Image
                       src="/images/story.jpg"
                       alt="Gabriel Obekpa reflecting on his football journey"

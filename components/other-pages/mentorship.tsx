@@ -182,11 +182,11 @@ export default function MentorshipPage() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="md:flex justify-center lg:justify-end mt-10 md:mt-10"
+              className="flex justify-center lg:justify-end mt-10 md:mt-10"
             >
-              <div className="relative h-120 w-86 md:h-155 md:w-154 lg:h-155 lg:w-124">
+              <div className="relative h-120 w-76 md:h-155 md:w-154 lg:h-155 lg:w-124">
                 <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
-                 <div className="relative h-120 w-85 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-155 md:w-155 lg:h-155 lg:w-124">
+                 <div className="relative h-120 w-75 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-155 md:w-155 lg:h-155 lg:w-124">
                   <Image
                   src="/images/mentorship.jpeg"
                   alt="Gabriel Obekpa reflecting on his football journey"
