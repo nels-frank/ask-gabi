@@ -175,7 +175,7 @@ export default function Journey() {
                 initial={{ opacity: 0, x: 30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7, delay: 0.15 }}
-                className="my-8 flex justify-center lg:hidden"
+                className="my-8 flex justify-left lg:hidden"
               >
                 <div className="relative h-120 w-86 md:h-175 md:w-105">
                   <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
@@ -419,7 +419,7 @@ export default function Journey() {
       {/* LESSONS */}
       <section className="mt-4 px-6 py-3 md:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
+          <div className="mt-6 mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
             <GraduationCap className="h-4 w-4" />
             Lessons Along the Way
           </div>

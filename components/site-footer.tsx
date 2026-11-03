@@ -147,7 +147,7 @@ export default function SiteFooter() {
         </div>
       </div>
        <div className="border-t border-emerald-900">
-        <div className="mx-auto flex max-w-7xl flex-row gap-3 px-12 py-6 text-center md:px-40 md:flex-row md:items-center md:justify-between md:text-left lg:px-75">
+        <div className="mx-auto flex max-w-7xl flex-row gap-3 px-6 py-6 text-center md:px-40 md:flex-row md:items-center md:justify-between md:text-left lg:px-75">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
 
