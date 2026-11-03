@@ -10,7 +10,7 @@ import {
 
 export default function FinalAskGabiCTA() {
   return (
-    <section className="bg-white px-5 py-2 sm:px-6 sm:py-2 lg:px-8 lg:py-2">
+    <section className="bg-white px-2 py-2 sm:px-6 sm:py-2 lg:px-8 lg:py-2">
       <div className="relative mx-auto max-w-7xl overflow-hidden rounded-md bg-emerald-950 px-6 py-14 sm:px-10 sm:py-16 lg:px-16 lg:py-20">
         {/* Decorative background */}
         <div className="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full border-[40px] border-emerald-800/40 sm:h-96 sm:w-96" />
@@ -30,14 +30,14 @@ export default function FinalAskGabiCTA() {
               </span>
             </h2>
 
-            <p className="mt-6 max-w-2xl text-base text-justify font-bold leading-7 text-emerald-100/80 sm:text-lg sm:leading-8">
+            <p className="mt-6 max-w-2xl text-xl text-left font-bold leading-7 text-emerald-100/80 sm:text-lg sm:leading-8">
               You have the talent. Now build the understanding to navigate
               your career with greater confidence. Learn from real
               experience, ask important questions and discover the support
               available to you.
             </p>
 
-            <p className="mt-5 text-lg font-bold text-white sm:text-xl">
+            <p className="mt-5 text-xl font-bold text-white sm:text-xl">
               You don&apos;t have to go through football alone.
             </p>
 
@@ -58,33 +58,8 @@ export default function FinalAskGabiCTA() {
               </Link>
             </div>
           </div>
-
-          {/* Supporting message */}
-          <div className="w-full rounded-3xl border border-emerald-800 bg-emerald-900/60 p-6 sm:p-8 lg:w-72">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-lime-400 text-emerald-950">
-              <MessageCircle className="h-6 w-6" />
-            </div>
-
-            <h3 className="mt-5 text-xl font-bold text-white">
-              Start with a question.
-            </h3>
-
-            <p className="mt-3 text-sm leading-6 text-justify font-bold text-emerald-100/80">
-              Whether you need direction, knowledge or guidance, taking the
-              first step can help you make a more informed decision.
-            </p>
-
-            <div className="mt-6 flex items-start gap-3 border-t border-emerald-800 pt-5">
-              <ShieldCheck className="mt-0.5 h-5 w-5 shrink-0 text-lime-400" />
-
-              <p className="text-xs leading-5 text-justify font-bold text-emerald-100/70">
-                Real experience. Trusted knowledge. Qualified professional
-                support when needed.
-              </p>
-            </div>
-          </div>
         </div>
-
+        
         {/* Brand closing */}
         <div className="relative border-t border-emerald-800 pt-7 text-center sm:mt-6">
           <p className="text-sm font-black tracking-[0.22em] text-white sm:text-base">

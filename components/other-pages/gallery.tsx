@@ -17,18 +17,23 @@ import {
 } from "lucide-react";
 import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 
-type Category =
-  | "All Media"
-  | "Landscape"
-  | "Portrait"
-  | "Short Clips"
-  | "Highlights";
+const clubs = [
+  { name: "Bodrum FK", slug: "bodrum-fk", photoCount: 32 },
+  { name: "FC Zimbru Chișinău", slug: "fc-zimbru-chisinau", photoCount: 13 },
+  { name: "IMT Novi Beograd", slug: "imt-novi-beograd", photoCount: 5 },
+  { name: "Tekstilac Odžaci", slug: "tekstilac-odzaci", photoCount: 3 },
+  { name: "Dynamo Academica", slug: "dynamo-academica", photoCount: 1 },
+  { name: "Mladost Lučani", slug: "mladost-lucani", photoCount: 0 },
+] as const;
+
+type ClubName = (typeof clubs)[number]["name"];
+type Category = "All Media" | ClubName | "Short Clips" | "Highlights";
 
 type Photo = {
   id: string;
   src: string;
   alt: string;
-  category: "Landscape" | "Portrait";
+  category: ClubName;
 };
 
 type VideoItem = {
@@ -38,19 +43,14 @@ type VideoItem = {
   category: "Short Clips" | "Highlights";
 };
 
-const landscapePhotos: Photo[] = Array.from({ length: 24 }, (_, index) => ({
-  id: `landscape-${index + 1}`,
-  src: `/images/gallery/landscape/landscape-${String(index + 1).padStart(2, "0")}.webp`,
-  alt: `Gabriel Obekpa football moment ${index + 1}`,
-  category: "Landscape",
-}));
-
-const portraitPhotos: Photo[] = Array.from({ length: 32 }, (_, index) => ({
-  id: `portrait-${index + 1}`,
-  src: `/images/gallery/portrait/portrait-${String(index + 1).padStart(2, "0")}.webp`,
-  alt: `Gabriel Obekpa portrait ${index + 1}`,
-  category: "Portrait",
-}));
+const photos: Photo[] = clubs.flatMap((club) =>
+  Array.from({ length: club.photoCount }, (_, index) => ({
+    id: `${club.slug}-${index + 1}`,
+    src: `/images/gallery/${club.slug}/${String(index + 1).padStart(2, "0")}.webp`,
+    alt: `Gabriel Obekpa at ${club.name} ${index + 1}`,
+    category: club.name,
+  })),
+);
 
 const shortClips: VideoItem[] = Array.from({ length: 9 }, (_, index) => ({
   id: `clip-${index + 1}`,
@@ -66,13 +66,11 @@ const highlights: VideoItem[] = Array.from({ length: 8 }, (_, index) => ({
   category: "Highlights",
 }));
 
-const photos = [...landscapePhotos, ...portraitPhotos];
 const videos = [...shortClips, ...highlights];
 
 const categories: { label: Category; count: number }[] = [
   { label: "All Media", count: photos.length + videos.length },
-  { label: "Landscape", count: landscapePhotos.length },
-  { label: "Portrait", count: portraitPhotos.length },
+  ...clubs.map((club) => ({ label: club.name, count: club.photoCount })),
   { label: "Short Clips", count: shortClips.length },
   { label: "Highlights", count: highlights.length },
 ];
@@ -103,7 +101,7 @@ export default function GalleryPage() {
   const filteredPhotos =
     activeCategory === "All Media"
       ? photos
-      : activeCategory === "Landscape" || activeCategory === "Portrait"
+      : clubs.some((club) => club.name === activeCategory)
         ? photos.filter((photo) => photo.category === activeCategory)
         : [];
 
@@ -132,7 +130,7 @@ export default function GalleryPage() {
           >
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
               <Code2 className="h-4 w-4" />
-              Ask Gabi
+              ASK GABI
             </div>
 
             <h1 className="text-left text-2xl font-bold tracking-tight text-gray-900 lg:text-3xl md:text-3xl">
@@ -154,12 +152,15 @@ export default function GalleryPage() {
           </motion.div>
 
           {/* MEDIA COUNTS */}
-          <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {[
-              { label: "Landscape Photos", count: "24", icon: Images },
-              { label: "Portrait Photos", count: "32", icon: Camera },
-              { label: "Short Clips", count: "09", icon: Play },
-              { label: "Highlights", count: "08", icon: Video },
+              ...clubs.map((club) => ({
+                label: club.name,
+                count: String(club.photoCount).padStart(2, "0"),
+                icon: Camera,
+              })),
+              { label: "Short Clips", count: String(shortClips.length).padStart(2, "0"), icon: Play },
+              { label: "Highlights", count: String(highlights.length).padStart(2, "0"), icon: Video },
             ].map((item, index) => {
               const Icon = item.icon;
 
@@ -201,9 +202,9 @@ export default function GalleryPage() {
             Explore the Gallery
           </h2>
           <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
-          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
-            Browse match moments, portraits, short clips and career highlights.
-            Select a category to explore.
+          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+            Browse pictures from each club, along with short clips and career highlights.
+            Select a club or video category to explore.
           </p>
         </div>
 
@@ -254,9 +255,7 @@ export default function GalleryPage() {
                   transition={{ duration: 0.35, delay: (index % 4) * 0.04 }}
                   onClick={() => setSelectedPhoto(photo)}
                   aria-label={`View ${photo.alt}`}
-                  className={`group relative block w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 text-left shadow-sm ${
-                    photo.category === "Portrait" ? "aspect-[3/4]" : "aspect-[4/3]"
-                  }`}
+                  className="group relative block aspect-[3/4] w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 text-left shadow-sm"
                 >
                   <Image
                     src={photo.src}
@@ -270,9 +269,7 @@ export default function GalleryPage() {
 
                   <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-3 sm:p-4">
                     <span className="text-xs font-bold text-white sm:text-sm">
-                      {photo.category === "Landscape"
-                        ? "Football Moments"
-                        : "Player Portraits"}
+                      {photo.category}
                     </span>
                     <span className="rounded-full bg-white/20 p-2 text-white opacity-0 backdrop-blur-sm transition group-hover:opacity-100">
                       <Images className="h-4 w-4" />
@@ -355,7 +352,7 @@ export default function GalleryPage() {
               <h2 className="mt-2 text-justify text-xl font-bold tracking-tight sm:text-3xl md:text-3xl">
                 Every journey has a lesson to share.
               </h2>
-              <p className="mt-2 text-base font-bold leading-7 text-green-50 sm:text-lg sm:leading-8">
+              <p className="mt-2 text-xl font-bold leading-7 text-green-50 sm:text-lg sm:leading-8">
                 Discover the experiences behind ASK GABI and learn why
                 knowledge matters on and off the pitch.
               </p>

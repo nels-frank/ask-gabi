@@ -37,7 +37,7 @@ const journey = [
     title: "A New Level",
     location: "Türkiye",
     description:
-      "In August 2024, I joined Bodrum FK, stepping into Turkish professional football and competing at the Süper Lig level.",
+      "In August 2024, I joined Bodrum FK, stepping into Turkish professional football - competing at the Süper Lig level.",
     image: "/images/t0key.jpg",
   },
   {
@@ -177,11 +177,11 @@ export default function Journey() {
                 transition={{ duration: 0.7, delay: 0.15 }}
                 className="my-8 flex justify-center lg:hidden"
               >
-                <div className="relative h-120 w-76 md:h-155 md:w-155">
+                <div className="relative h-120 w-86 md:h-175 md:w-105">
                   <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
-                  <div className="relative h-120 w-75 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-155 md:w-155">
+                  <div className="relative h-120 w-85 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-175 md:w-105 lg:h-175 lg:w-155">
                     <Image
-                      src="/images/journeymenu.jpg"
+                      src="/images/10.webp"
                       alt="Gabriel Obekpa reflecting on his football journey"
                       fill
                       priority
@@ -192,49 +192,49 @@ export default function Journey() {
                 </div>
               </motion.div>
               
-              <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 From Nigeria to professional football in Europe, my journey has
                 taught me valuable lessons about ambition, sacrifice, adaptation
                 and the realities of pursuing a football career abroad.
               </p>
 
-              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 Along the way, I experienced situations that made me realise how
                 important it is for young players to ask questions and understand
                 the opportunities they are pursuing.
               </p>
 
-              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 Is it a trial or a guaranteed contract? Who is arranging the
                 opportunity? What costs are involved? Are the terms clear?
               </p>
 
-              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 These experiences inspired me to create ASK GABI; a platform where
                 young footballers can ask questions, learn from my journey and
                 find qualified professional support when they need expertise
                 beyond my own experience.
               </p>
 
-              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 You don’t need to know everything. You need access to people who do.
               </p>
 
+            <div className="my-6 rounded-xl border-l-4 border-green-600 bg-green-50 p-3 sm:p-6">
+            <div className="mb-2 flex items-center gap-3">
+              <div className="rounded-lg bg-green-600 p-2">
+                <Rocket className="h-5 w-5 text-white" />
+              </div>
+              <h4 className="text-l font-bold text-slate-900">
+                One lesson that stayed with me
+              </h4>
+            </div>
 
-              <div className="my-6 rounded-xl border-l-4 border-green-600 bg-green-50 p-5 sm:p-6">
-                  <div className="flex items-start gap-3">
-                    <Rocket className="mt-1 h-6 w-6 shrink-0 text-green-700" />
-                    <div>
-                      <h4 className="text-lg font-bold text-slate-900 sm:text-xl">
-                        One lesson that stayed with me
-                      </h4>
-                      <p className="mt-2 text-justify text-l font-bold leading-7 text-slate-600 sm:text-base sm:leading-8">
-                        Talent can open a door. Discipline, adaptability and
-                        informed decisions help you navigate what comes next.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <p className="text-xl font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
+              Talent can open a door. Discipline, adaptability and informed decisions
+              help you navigate what comes next.
+            </p>
+          </div>
             </motion.div>
 
             {/* Profile Picture: Desktop */}
@@ -262,8 +262,8 @@ export default function Journey() {
       </section>
 
       {/* CAREER TIMELINE */}
-      <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-4 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
-          <div className="border-b border-slate-200 bg-slate-50 p-5 md:p-8">
+      <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-2 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
+          <div className="border-b border-slate-200 bg-slate-50 p-2 md:p-8">
             <div className="mb-2 flex items-center gap-3">
               <div className="rounded-lg bg-green-600 p-2">
                 <BiFootball className="h-5 w-5 text-white" />
@@ -277,24 +277,25 @@ export default function Journey() {
               Every club taught me something
             </h3>
 
-            <p className="mt-2 max-w-3xl text-justify text-xl font-bold leading-7 text-slate-500 sm:text-base sm:leading-8">
+            <p className="mt-2 max-w-4xl text-xl font-bold leading-7 text-slate-500 sm:text-xl sm:leading-8">
               Different countries, different expectations and experiences
               shaped my understanding of professional football.
             </p>
           </div>
 
-          <div className="p-4 md:p-8">
-            <div className="grid gap-4 lg:grid-cols-2">
-              {clubs.map((item, index) => (
-                <motion.article
-                  key={`${item.club}-${item.period}`}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.1 }}
-                  transition={{ duration: 0.45, delay: (index % 2) * 0.08 }}
-                  className="flex items-start gap-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md sm:p-5"
-                >
-                  <div className="flex h-12 w-14 shrink-0 items-center justify-center overflow-hidden rounded-md bg-slate-100 sm:h-14 sm:w-16">
+          <div className="md:p-8 mb-8">
+          <div className="grid gap-4 lg:grid-cols-2">
+            {clubs.map((item, index) => (
+              <motion.article
+                key={`${item.club}-${item.period}`}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ duration: 0.45, delay: (index % 2) * 0.08 }}
+                className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-shadow hover:shadow-md sm:p-5"
+              >
+                <div className="mb-2 flex items-center gap-3">
+                  <div className="flex h-10 w-12 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-slate-100">
                     <Image
                       src={flags[item.country]}
                       alt={`${item.country} flag`}
@@ -304,56 +305,53 @@ export default function Journey() {
                     />
                   </div>
 
-                  <div className="min-w-0 flex-1">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-xs font-bold text-green-600">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <h3 className="text-base font-bold text-slate-900 sm:text-lg">
-                        {item.club}
-                      </h3>
-                    </div>
-
-                    <p className="mt-1 text-xs font-bold text-green-700 sm:text-sm">
-                      {item.country} · {item.period}
-                    </p>
-
-                    <p className="mt-2 text-justify text-l font-bold leading-7 text-slate-500 sm:text-base sm:leading-8">
-                      {item.description}
-                    </p>
+                  <div className="flex min-w-0 items-center gap-2">
+                    <span className="text-xs font-bold text-green-600">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-xl font-bold text-slate-900">
+                      {item.club}
+                    </h3>
                   </div>
 
                   {index < clubs.length - 1 && (
-                    <ArrowRight className="mt-1 hidden h-4 w-4 shrink-0 text-slate-300 md:block" />
+                    <ArrowRight className="ml-auto hidden h-4 w-4 shrink-0 text-slate-300 md:block" />
                   )}
-                </motion.article>
-              ))}
+                </div>
+
+                <p className="text-sm font-bold text-green-700">
+                  {item.country} · {item.period}
+                </p>
+
+                <p className="mt-2 text-xl font-bold leading-7 text-slate-500 sm:text-xl sm:leading-8">
+                  {item.description}
+                </p>
+              </motion.article>
+            ))}
+          </div>
+        </div>
+
+          <div className="border-t border-slate-200 bg-slate-50 p-2 md:p-6">
+          <div className="mb-2 flex items-center gap-3">
+            <div className="rounded-lg bg-green-600 p-2">
+              <UserRound className="h-5 w-5 text-white" />
             </div>
+            <h3 className="text-2xl font-bold text-slate-900">
+              More than club names
+            </h3>
           </div>
 
-          <div className="border-t border-slate-200 bg-slate-50 p-5 md:p-6">
-            <div className="flex items-start gap-4">
-              <div className="mt-1 rounded-full bg-green-100 p-3">
-                <UserRound className="h-6 w-6 text-green-700" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-slate-900">
-                  More than club names
-                </h3>
-                <p className="mt-2 text-justify text-l font-bold leading-7 text-slate-600 sm:text-base sm:leading-8">
-                  Each stage brought different expectations and decisions.
-                  These experiences helped me appreciate the importance of
-                  preparation, adaptability and understanding the professional
-                  side of football.
-                </p>
-              </div>
-            </div>
-          </div>
+          <p className="text-xl font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
+            Each stage brought different expectations and decisions. These experiences
+            helped me appreciate the importance of preparation, adaptability and
+            understanding the professional side of football.
+          </p>
+        </div>
       </section>
 
-      <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-4 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
-          <div className="border-b border-slate-200 bg-slate-50 p-5 md:p-8">
-            <div className="mb-2 flex items-center gap-3">
+      <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-2 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
+          <div className="border-b border-slate-200 bg-slate-50 p-2 md:p-8">
+            <div className="mb-2 flex items-center gap-2">
                 <div className="rounded-lg bg-green-600 p-2">
                 <BiFootball className="h-5 w-5 text-white" />
               </div>
@@ -366,10 +364,10 @@ export default function Journey() {
                   From Africa to Europe
                 </h3>
       
-                <p className="mt-2 max-w-3xl text-justify text-xl font-bold leading-7 text-slate-500 sm:text-base sm:leading-8">
+                <p className="mb-5 mt-2 max-w-4xl text-xl text-justify font-bold leading-7 text-slate-500 sm:text-xl sm:leading-8">
                   From my beginnings in Nigeria to professional football across
-                  Europe, every chapter has brought a new challenge, experience,
-                  and opportunity to grow.
+                  Europe, every chapter has brought new challenges, experiences,
+                  and opportunities to grow.
                 </p>
               </div>
       
@@ -399,7 +397,7 @@ export default function Journey() {
       
                     {/* Content */}
                     <div className="p-3">
-                      <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-emerald-700">
+                      <div className="flex items-center gap-2 text-m font-bold uppercase tracking-[0.15em] text-emerald-700">
                         <MapPin className="h-3.5 w-3.5" />
                         {item.location}
                       </div>
@@ -408,7 +406,7 @@ export default function Journey() {
                         {item.title}
                       </h3>
       
-                      <p className="mt-3 text-l font-bold text-justify leading-6 text-slate-600">
+                      <p className="mt-3 text-xl font-bold leading-6 text-slate-600">
                         {item.description}
                       </p>
                     </div>
@@ -427,14 +425,14 @@ export default function Journey() {
           </div>
 
           <h2 className="text-left text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-3xl">
-            What my journey has taught me
+            What football has taught me
           </h2>
 
           <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
 
           <p className="mt-2 max-w-3xl text-justify text-xl font-bold leading-7 text-slate-500 sm:text-xl sm:leading-8">
             A football career involves more than talent and opportunity. These
-            are some of the lessons I carry from my experiences.
+            are some of the lessons I learnt.
           </p>
 
           <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2">
@@ -448,7 +446,7 @@ export default function Journey() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.15 }}
                   transition={{ duration: 0.45, delay: index * 0.06 }}
-                  className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md md:p-6"
+                  className="rounded-xl border border-slate-200 bg-white p-2 shadow-sm transition-shadow hover:shadow-md md:p-6"
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-bold text-green-600">
@@ -463,7 +461,7 @@ export default function Journey() {
                     {lesson.title}
                   </h3>
 
-                  <p className="mt-3 text-l font-bold text-justify leading-6 text-slate-600">
+                  <p className="mt-3 text-xl font-bold leading-6 text-slate-600">
                     {lesson.description}
                   </p>
                 </motion.article>

@@ -79,7 +79,7 @@ export default function ContactPage() {
 
             <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
 
-            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
               Every football journey comes with questions. Whether you are
               an aspiring player looking for direction or someone who wants
               to learn from the professional game, ASK GABI is here to help
@@ -111,7 +111,7 @@ export default function ContactPage() {
             transition={{ duration: 0.6, delay: 0.12 }}
             className="relative"
           >
-            <div className="relative overflow-hidden rounded-2xl bg-green-950 p-6 text-white sm:rounded-3xl sm:p-8">
+            <div className="relative overflow-hidden rounded-2xl bg-green-950 p-2 text-white sm:rounded-3xl sm:p-8">
               <div
                 aria-hidden="true"
                 className="absolute -right-12 -top-12 h-44 w-44 rounded-full border-[24px] border-white/5"
@@ -130,11 +130,11 @@ export default function ContactPage() {
                   The ASK GABI Mission
                 </p>
 
-                <h2 className="mt-3 text-xl text-justify font-extrabold leading-snug lg:text-3xl md:text-2xl">
+                <h2 className="mt-3 text-xl font-extrabold leading-snug lg:text-3xl md:text-2xl">
                   Better information. Better decisions. A stronger journey.
                 </h2>
 
-                <p className="mt-4 text-l text-justify font-bold leading-7 text-green-50/85 sm:text-base">
+                <p className="mt-4 text-xl font-bold leading-7 text-green-50/85 sm:text-xl">
                   Football talent matters, but knowing how to navigate the
                   journey matters too. Ask your questions, seek clarity,
                   and keep moving forward.
@@ -144,7 +144,7 @@ export default function ContactPage() {
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
                     <ShieldCheck size={21} className="text-lime-300" />
                   </div>
-                  <p className="text-l font-semibold leading-6 text-white/90">
+                  <p className="text-xl font-semibold leading-6 text-white/90">
                     A space to learn, connect, and grow through football
                     experience.
                   </p>
@@ -158,7 +158,7 @@ export default function ContactPage() {
       {/* Contact options */}
       <section
         id="contact-options"
-        className="mx-auto mt-4 max-w-7xl px-4 py-10 md:px-8"
+        className="mx-auto mt-4 max-w-7xl px-3 py-10 md:px-8"
       >
         <div className="mb-6">
           <p className="text-l font-extrabold uppercase tracking-[0.16em] text-green-800">
@@ -167,7 +167,7 @@ export default function ContactPage() {
           <h2 className="mt-2 text-2xl font-extrabold text-green-950 sm:text-3xl">
             Choose how to reach out
           </h2>
-          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
             Have a question about your football journey? Start with the
             option that works best for you.
           </p>
@@ -177,7 +177,7 @@ export default function ContactPage() {
           <motion.a
             whileHover={{ y: -4 }}
             href="#contact-form"
-            className="group flex h-full flex-col rounded-2xl border border-green-950/10 bg-white p-5 shadow-sm transition hover:border-green-800/30 hover:shadow-md sm:p-6"
+            className="group flex h-full flex-col rounded-2xl border border-green-950/10 bg-white p-2 shadow-sm transition hover:border-green-800/30 hover:shadow-md sm:p-6"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-green-100 text-green-900">
               <MessageCircle size={24} />
@@ -186,7 +186,7 @@ export default function ContactPage() {
             <h3 className="mt-4 text-2xl font-extrabold text-green-950">
               Ask a Football Question
             </h3>
-            <p className="mt-2 text-xl text-justify font-bold leading-6 text-gray-600 sm:text-base sm:leading-7">
+            <p className="mt-2 text-xl font-bold leading-6 text-gray-600 sm:text-xl sm:leading-7">
               Share a challenge, ask for guidance, or seek insight into
               life and decisions in professional football.
             </p>
@@ -204,7 +204,7 @@ export default function ContactPage() {
           <motion.a
             whileHover={{ y: -4 }}
             href="#contact-form"
-            className="group flex h-full flex-col rounded-2xl border border-green-950/10 bg-white p-5 shadow-sm transition hover:border-green-800/30 hover:shadow-md sm:p-6"
+            className="group flex h-full flex-col rounded-2xl border border-green-950/10 bg-white p-2 shadow-sm transition hover:border-green-800/30 hover:shadow-md sm:p-6"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-lime-100 text-green-900">
               <Send size={23} />
@@ -213,7 +213,7 @@ export default function ContactPage() {
             <h3 className="mt-4 text-2xl font-extrabold text-green-950">
               Collaborations &amp; Enquiries
             </h3>
-            <p className="mt-2 text-xl text-justify font-bold leading-6 text-gray-600 sm:text-base sm:leading-7">
+            <p className="mt-2 text-xl font-bold leading-6 text-gray-600 sm:text-xl sm:leading-7">
               Interested in working with ASK GABI, sharing an opportunity,
               or discussing a football-related initiative? Get in touch.
             </p>
@@ -236,8 +236,8 @@ export default function ContactPage() {
         className="mx-auto mt-4 max-w-7xl px-3 py-4 md:px-8"
       >
         <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:gap-10">
-          <div className="rounded-2xl bg-green-950 p-6 text-white sm:rounded-3xl sm:p-8">
-            <p className="text-sm font-extrabold uppercase tracking-[0.16em] text-lime-300">
+          <div className="rounded-2xl bg-green-950 p-2 text-white sm:rounded-3xl sm:p-8">
+            <p className="mt-2 text-sm font-extrabold uppercase tracking-[0.16em] text-lime-300">
               Your Message Matters
             </p>
 
@@ -245,7 +245,7 @@ export default function ContactPage() {
               Tell us what is on your mind.
             </h2>
 
-            <p className="mt-4 text-l font-bold text-justify leading-7 text-green-50/85 sm:text-base">
+            <p className="mt-4 text-xl font-bold leading-7 text-green-50/85 sm:text-xl">
               You do not need to have everything figured out before asking
               a question. Give us a little context about what you need, and
               let&apos;s start from there.
@@ -299,7 +299,7 @@ export default function ContactPage() {
               <h2 className="mt-3 text-2xl font-extrabold text-green-950 sm:text-3xl">
                 Send your message
               </h2>
-              <p className="mt-2 text-l font-bold text-justify leading-6 text-gray-600 sm:text-base">
+              <p className="mt-2 text-xl font-bold text-justify leading-6 text-gray-600 sm:text-xl">
                 Complete the details below to prepare your WhatsApp message.
               </p>
             </div>
@@ -364,7 +364,7 @@ export default function ContactPage() {
                   onChange={(event) =>
                     setFormData({ ...formData, topic: event.target.value })
                   }
-                  className="w-full rounded-xl border border-gray-200 bg-slate-50 px-4 py-3 text-sm font-medium text-gray-800 outline-none transition focus:border-green-800 focus:bg-white focus:ring-2 focus:ring-green-800/10"
+                  className="w-full rounded-xl border border-gray-200 bg-slate-50 px-2 py-3 text-sm font-medium text-gray-800 outline-none transition focus:border-green-800 focus:bg-white focus:ring-2 focus:ring-green-800/10"
                 >
                   <option>Career Guidance</option>
                   <option>Professional Football</option>
@@ -413,7 +413,7 @@ export default function ContactPage() {
                 <ArrowRight size={18} />
               </button>
 
-              <p className="text-l font-bold text-justify leading-5 text-gray-500">
+              <p className="text-l text-justify font-extrabold leading-5 text-green-950">
                 WhatsApp will open with your message prepared. You can review
                 it before sending. This form does not send or store your
                 message on this website.
@@ -425,7 +425,7 @@ export default function ContactPage() {
 
       {/* Closing CTA */}
       <section className="mx-auto mt-4 max-w-7xl px-3 pb-10 pt-4 md:px-8 md:pb-14">
-        <div className="relative overflow-hidden rounded-2xl bg-green-950 px-2 py-8 text-center text-white sm:rounded-3xl sm:px-2 sm:py-10">
+        <div className="relative overflow-hidden rounded-2xl bg-green-950 px-2 py-8 text-white sm:rounded-3xl sm:px-2 sm:py-10">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -right-12 -top-20 h-52 w-52 rounded-full bg-green-700/50 blur-3xl"
@@ -436,15 +436,11 @@ export default function ContactPage() {
           />
 
           <div className="relative max-w-6xl">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-lime-300 text-green-950">
-              <CheckCircle2 size={25} />
-            </div>
-
-            <h2 className="mt-4 text-xl font-bold leading-tight lg:text-4xl md:text-4xl">
+            <h2 className="mt-2 text-xl font-bold leading-tight lg:text-4xl md:text-4xl">
               Every great journey starts somewhere.
             </h2>
 
-            <p className="mx-auto mt-3 max-w-4xl text-base font-bold leading-7 text-green-50/85 sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-3 max-w-4xl text-xl font-bold leading-7 text-green-50/85 sm:text-xl sm:leading-8">
               Take the first step. Ask the question. Find the information
               that helps you move forward.
             </p>

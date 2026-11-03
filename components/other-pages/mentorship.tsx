@@ -137,21 +137,21 @@ export default function MentorshipPage() {
 
               <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
 
-              <p className="mt-4 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-4 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 Football is more than talent, training, and what happens
                 on the pitch. The decisions you make about agents,
                 contracts, trials, and your future can shape your entire
                 career.
               </p>
 
-              <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 Through ASK GABI, I want to share lessons from my own
                 professional football journey and help young African
                 footballers ask better questions, understand their
                 options, and make informed decisions.
               </p>
 
-              <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 I may not have every answer, but I believe every player
                 deserves access to useful knowledge and the right
                 professional support when it matters.
@@ -184,11 +184,11 @@ export default function MentorshipPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="flex justify-center lg:justify-end mt-10 md:mt-10"
             >
-              <div className="relative h-120 w-76 md:h-155 md:w-154 lg:h-155 lg:w-124">
+              <div className="relative h-120 w-86 md:h-175 md:w-154 lg:h-155 lg:w-124">
                 <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
-                 <div className="relative h-120 w-75 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-155 md:w-155 lg:h-155 lg:w-124">
+                 <div className="relative h-120 w-85 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-175 md:w-155 lg:h-155 lg:w-124">
                   <Image
-                  src="/images/mentorship.jpeg"
+                  src="/images/25.webp"
                   alt="Gabriel Obekpa reflecting on his football journey"
                   fill
                   priority
@@ -230,7 +230,7 @@ export default function MentorshipPage() {
 
               <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
 
-              <div className="mt-4 space-y-3 text-xl text-justify font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <div className="mt-4 space-y-3 text-xl text-justify font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 <p>
                   Many talented footballers work hard for the chance to
                   play professionally, yet still face difficult decisions
@@ -256,18 +256,18 @@ export default function MentorshipPage() {
               <div className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-green-700/30 blur-3xl" />
 
               <div className="relative">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-lime-400">
-                  The Principle Behind ASK GABI
+                <p className="text-l font-bold uppercase tracking-[0.2em] text-lime-400">
+                 Principle Behind ASK GABI
                 </p>
 
-                <blockquote className="mt-5 text-l text-justify font-bold leading-relaxed md:text-2xl lg:text-3xl">
+                <blockquote className="mt-5 text-xl font-bold leading-relaxed md:text-2xl lg:text-3xl">
                   You don&apos;t need to know everything. You need access
                   to people who do.
                 </blockquote>
 
                 <div className="mt-6 h-1 w-16 rounded-full bg-lime-400" />
 
-                <p className="mt-5 text-base text-justify font-bold leading-7 text-emerald-50/80 sm:text-lg sm:leading-8">
+                <p className="mt-5 text-xl font-bold leading-7 text-emerald-50/80 sm:text-xl sm:leading-8">
                   Real experiences. Practical lessons. Better questions.
                   Appropriate professional support when it matters.
                 </p>
@@ -276,7 +276,7 @@ export default function MentorshipPage() {
                   <div className="rounded-full bg-white/10 p-3">
                     <MessageCircle className="h-6 w-6 text-lime-400" />
                   </div>
-                  <p className="text-sm font-bold leading-6 text-white/90">
+                  <p className="text-l font-bold leading-6 text-white/90">
                     Every question can be the beginning of a better-informed
                     decision.
                   </p>
@@ -311,7 +311,7 @@ export default function MentorshipPage() {
 
               <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
 
-              <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+              <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                 My career has become a classroom. These are some of the
                 important subjects I want to discuss with young African
                 footballers as they navigate their own journeys.
@@ -319,7 +319,7 @@ export default function MentorshipPage() {
             </motion.div>
           </div>
 
-          <div className="px-4 pb-6 md:px-6 lg:px-8 lg:pb-8">
+          <div className="px-1 pb-6 md:px-6 lg:px-8 lg:pb-8">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               {lessons.map((lesson, index) => {
                 const Icon = lesson.icon;
@@ -331,7 +331,7 @@ export default function MentorshipPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.1 }}
                     transition={{ duration: 0.4, delay: (index % 3) * 0.06 }}
-                    className="flex flex-col rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition-all hover:-translate-y-1 hover:border-green-200 hover:shadow-md md:p-5"
+                    className="flex flex-col rounded-xl border border-slate-200 bg-white p-2 shadow-sm transition-all hover:-translate-y-1 hover:border-green-200 hover:shadow-md md:p-5"
                   >
                     <div className="flex items-center justify-between">
                       <span className="text-sm font-bold text-green-700">
@@ -346,7 +346,7 @@ export default function MentorshipPage() {
                       {lesson.title}
                     </h3>
 
-                    <p className="mt-3 text-xl text-justify font-bold leading-7 text-slate-500 md:text-base md:leading-8">
+                    <p className="mt-3 text-xl font-bold leading-7 text-slate-500 md:text-xl md:leading-8">
                       {lesson.description}
                     </p>
                   </motion.article>
@@ -380,7 +380,7 @@ export default function MentorshipPage() {
 
             <div className="mt-4 h-1 w-16 rounded-full bg-green-700" />
 
-            <div className="mt-5 space-y-4 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-lg sm:leading-8">
+            <div className="mt-5 space-y-4 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
               <p>
                 My journey through Serbia, Türkiye, and Moldova taught me
                 that professional football can bring different expectations,
@@ -431,7 +431,7 @@ export default function MentorshipPage() {
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-green-800" />
-                  <p className="text-xl text-justify font-bold leading-7 text-slate-600 sm:text-base sm:leading-8">
+                  <p className="text-xl font-bold leading-7 text-slate-600 sm:text-base sm:leading-8">
                     {item}
                   </p>
                 </div>
@@ -456,7 +456,7 @@ export default function MentorshipPage() {
 
             <div className="mt-3 h-1 w-16 rounded-full bg-lime-400" />
 
-            <p className="mt-4 text-xl text-justify font-bold leading-7 text-emerald-50/80 sm:text-lg sm:leading-8">
+            <p className="mt-4 text-xl font-bold leading-7 text-emerald-50/80 sm:text-xl sm:leading-8">
               Football involves more than what happens on the pitch.
               Some situations require expertise beyond my own experience.
               ASK GABI aims to help players identify the type of professional
@@ -485,7 +485,7 @@ export default function MentorshipPage() {
                     {professional.title}
                   </h3>
 
-                  <p className="mt-2 text-xl text-justify font-bold leading-7 text-emerald-50/70 sm:text-base sm:leading-8">
+                  <p className="mt-2 text-xl font-bold leading-7 text-emerald-50/70 sm:text-xl sm:leading-8">
                     {professional.description}
                   </p>
                 </motion.article>
@@ -493,24 +493,31 @@ export default function MentorshipPage() {
             })}
           </div>
 
-          <div className="mt-6 flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.04] p-3 sm:p-5">
-            <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-lime-400" />
-            <p className="text-m text-justify font-bold leading-7 text-emerald-50/80 sm:text-base sm:leading-8">
-              ASK GABI shares personal experiences and educational guidance.
-              It does not replace legal, medical, financial, or other
-              specialist advice. Professional referrals depend on suitable
-              qualified support being available.
-            </p>
+          <div className="mt-6 rounded-xl border border-white/10 bg-white/[0.04] p-3 sm:p-5">
+          <div className="mb-2 flex items-center gap-3">
+            <div className="rounded-lg bg-lime-500 p-2">
+              <ShieldCheck className="h-5 w-5 text-slate-900" />
+            </div>
+            <h3 className="text-xl font-bold text-emerald-50">
+              Important Disclaimer
+            </h3>
           </div>
+
+          <p className="text-xl font-bold leading-7 text-emerald-50/80 sm:text-xl sm:leading-8">
+            ASK GABI shares personal experiences and educational guidance. It does not
+            replace legal, medical, financial, or other specialist advice. Professional
+            referrals depend on suitable qualified support being available.
+          </p>
+        </div>
         </div>
       </section>
 
       {/* FINAL CTA */}
-      <section className="px-4 py-8 sm:py-12 md:px-8 lg:px-10">
+      <section className="px-2 py-8 sm:py-12 md:px-8 lg:px-10">
         <div className="relative max-w-7xl overflow-hidden rounded-2xl bg-lime-50 px-5 py-10 sm:px-8 sm:py-4">
           <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full bg-green-200/60 blur-3xl" />
 
-          <div className="relative mx-auto max-w-4xl text-center">
+          <div className="relative mx-auto max-w-4xl">
             <div className="mx-auto inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
               <MessageCircle className="h-4 w-4 text-lime-400" />
               Your Next Step
@@ -520,7 +527,7 @@ export default function MentorshipPage() {
               Have a question about your football journey?
             </h2>
 
-            <p className="mx-auto mt-4 max-w-3xl text-xl text-justify font-bold leading-7 text-slate-600 sm:text-center sm:text-lg sm:leading-8">
+            <p className="mx-auto mt-4 max-w-4xl text-xl font-bold leading-7 text-slate-600 sm:text-left sm:text-xl sm:leading-8">
               Start by asking. Share what you are trying to understand,
               learn from the experience I can offer, and identify when
               further professional guidance may be helpful.

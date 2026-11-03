@@ -1,22 +1,59 @@
+
 "use client";
 
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   BarChart3,
   CircleUserRound,
   Trophy,
+  UserRound,
 } from "lucide-react";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 25 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: "easeOut" as const },
+  },
+};
+
+const fadeLeft = {
+  hidden: { opacity: 0, x: -35 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8, ease: "easeOut" as const },
+  },
+};
+
+const staggerContainer = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.18,
+      delayChildren: 0.2,
+    },
+  },
+};
 
 export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative isolate min-h-[760px] overflow-hidden bg-[#003d2b] sm:min-h-[620px] lg:min-h-[660px]"
+      className="relative isolate min-h-[760px] overflow-hidden bg-[#003d2b] md:min-h-[400px] lg:min-h-[660px]"
     >
       {/* Hero Image */}
-      <div className="absolute inset-0 -z-30">
+      <motion.div
+        initial={{ scale: 1.08 }}
+        animate={{ scale: 1 }}
+        viewport={{ once: false, amount: 0.15 }}
+        transition={{ duration: 1.8, ease: "easeOut" }}
+        className="absolute inset-0 -z-30"
+      >
         <Image
           src="/images/hero.jpg"
           alt="Gabriel playing professional football"
@@ -25,7 +62,7 @@ export default function HeroSection() {
           sizes="100vw"
           className="object-cover object-[68%_center] sm:object-[72%_center] lg:object-[40%_center]"
         />
-      </div>
+      </motion.div>
 
       {/* Deep Green Overlay */}
       <div className="absolute inset-0 -z-20 bg-[#003d2b]/45" />
@@ -39,37 +76,56 @@ export default function HeroSection() {
       {/* Subtle diagonal design */}
       <div className="pointer-events-none absolute -left-24 top-0 h-full w-[42%] -skew-x-12 bg-white/[0.025]" />
 
-      <div className="relative mx-auto flex min-h-[500px] w-full max-w-[1440px] items-center px-5 pb-2 pt-26 sm:min-h-[700px] sm:px-8 lg:min-h-[800px] lg:px-10 lg:pb-2 lg:pt-2">
-        
-        {/* Hero Content */}
-        <div className="relative z-10 w-full max-w-[680px]">
-          
-          {/* Small Label */}
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-300/30 bg-emerald-400/10 px-4 py-2 backdrop-blur-sm">
-            <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
+      <div className="relative mx-auto flex min-h-[500px] w-full max-w-[1440px] items-center px-5 pb-2 pt-26 md:pt-0 sm:min-h-[700px] sm:px-8 lg:min-h-[800px] lg:px-10 lg:pb-2 lg:pt-2">
 
-            <span className="text-[13px] font-extrabold uppercase tracking-[0.12em] text-emerald-300 sm:text-[14px]">
+        {/* Hero Content */}
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+          className="relative z-10 w-full max-w-[680px]"
+        >
+
+          {/* Small Label */}
+          <motion.div
+            variants={fadeUp}
+            className="mb-10 inline-flex items-center gap-3 rounded-full border border-emerald-200 bg-white px-4 py-2 shadow-sm"
+          >
+            <div className="rounded-lg bg-emerald-900 p-2">
+              <UserRound className="h-4 w-4 text-white" />
+            </div>
+
+            <span className="text-xs font-extrabold uppercase tracking-[0.16em] text-emerald-900 sm:text-sm">
               Professional Footballer
             </span>
-          </div>
+          </motion.div>
 
           {/* Main Heading */}
-          <h1 className="max-w-[680px] text-6xl font-black leading-[1.04] tracking-[-0.025em] text-white text-justify sm:text-5xl md:text-6xl lg:text-[70px] xl:text-[78px]">
-            Building the
-            <span className="block text-emerald-300">
-              next level.
+          <motion.h1
+            variants={fadeLeft}
+            className="max-w-[680px] text-2xl font-black leading-[1.04] tracking-[-0.025em] text-white text-justify md:text-3xl lg:text-4xl"
+          >
+            GABI - THE
+            <span className="mt-4 block text-emerald-300">
+              FOOTBALL PHILOSOPHER
             </span>
-          </h1>
+          </motion.h1>
 
           {/* Supporting Text */}
-          <p className="mt-6 max-w-[600px] text-[18px] text-justify font-semibold leading-7 text-white/90 sm:text-[19px] sm:leading-8 lg:text-[20px]">
+          <motion.p
+            variants={fadeUp}
+            className="mt-6 max-w-[600px] text-[20px] text-justify font-bold leading-7 text-white/90 sm:text-[20px] sm:leading-8 lg:text-[20px]"
+          >
             A professional football journey driven by discipline, experience,
             mentorship and the ambition to help the next generation reach their
             full potential.
-          </p>
+          </motion.p>
 
           {/* CTA Buttons */}
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <motion.div
+            variants={fadeUp}
+            className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
+          >
             <Link
               href="#journey"
               className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-md bg-emerald-400 px-7 text-[16px] font-extrabold text-[#003d2b] shadow-lg shadow-emerald-950/20 transition-all duration-200 hover:bg-emerald-300 hover:shadow-xl"
@@ -89,12 +145,18 @@ export default function HeroSection() {
             >
               Discover Mentorship
             </Link>
-          </div>
+          </motion.div>
 
           {/* Trust / Identity Items */}
-          <div className="mt-12 grid max-w-[680px] grid-cols-2 gap-5 border-t border-white/15 pt-4 sm:grid-cols-3 sm:gap-0">
-            
-            <div className="flex items-center gap-3 sm:border-r sm:border-white/15 sm:pr-5">
+          <motion.div
+            variants={staggerContainer}
+            className="mt-12 grid max-w-[680px] grid-cols-2 gap-5 border-t border-white/15 pt-4 sm:grid-cols-3 sm:gap-0"
+          >
+
+            <motion.div
+              variants={fadeUp}
+              className="flex items-center gap-3 sm:border-r sm:border-white/15 sm:pr-5"
+            >
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-400/15 text-emerald-300">
                 <Trophy size={22} strokeWidth={2.5} />
               </div>
@@ -107,9 +169,12 @@ export default function HeroSection() {
                   Footballer
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex items-center gap-3 sm:border-r sm:border-white/15 sm:px-5">
+            <motion.div
+              variants={fadeUp}
+              className="flex items-center gap-3 sm:border-r sm:border-white/15 sm:px-5"
+            >
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-400/15 text-emerald-300">
                 <CircleUserRound size={22} strokeWidth={2.5} />
               </div>
@@ -122,9 +187,12 @@ export default function HeroSection() {
                   Next Generation
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex items-center gap-3 sm:pl-5">
+            <motion.div
+              variants={fadeUp}
+              className="flex items-center gap-3 sm:pl-5"
+            >
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-400/15 text-emerald-300">
                 <BarChart3 size={22} strokeWidth={2.5} />
               </div>
@@ -137,10 +205,10 @@ export default function HeroSection() {
                   Skills & Discipline
                 </p>
               </div>
-            </div>
+            </motion.div>
 
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
 
       {/* Bottom Shape */}

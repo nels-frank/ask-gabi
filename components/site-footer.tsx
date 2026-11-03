@@ -75,30 +75,11 @@ export default function SiteFooter() {
               </span>
             </Link>
 
-            <p className="mt-2 max-w-sm text-sm text-justify font-bold leading-7 text-emerald-100/75">
+            <p className="mt-2 max-w-sm text-sm text-left font-bold leading-7 text-emerald-100/75">
               Helping African footballers, especially Nigerian players,
               make informed career decisions through real experience,
               trusted knowledge and access to professional support.
             </p>
-
-            <div className="mt-6 flex items-center gap-3">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="flex h-6 w-6 items-center justify-center rounded-full border border-emerald-800 text-emerald-100 transition hover:border-lime-400 hover:bg-lime-400 hover:text-emerald-950"
-                  >
-                    <Icon className="h-4 w-4" />
-                  </a>
-                );
-              })}
-            </div>
           </div>
 
           {/* Quick links */}
@@ -147,18 +128,10 @@ export default function SiteFooter() {
               Start a Conversation
             </h2>
 
-            <p className="mt-2 text-sm text-justify font-bold leading-7 text-emerald-100/75">
+            <p className="mt-2 text-sm text-left font-bold leading-7 text-emerald-100/75">
               Have a question about your football journey? Take the first
               step towards making a more informed decision.
             </p>
-
-            <Link
-              href="/contact"
-              className="mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-lime-400 px-5 py-3 text-sm font-bold text-emerald-950 transition hover:bg-lime-300"
-            >
-              Contact <br /> ASK GABI
-              <ArrowUpRight className="h-4 w-4" />
-            </Link>
 
             <div className="mt-2 space-y-3 text-sm text-emerald-100/75">
               <p className="flex items-center gap-3 font-bold">
@@ -173,7 +146,26 @@ export default function SiteFooter() {
           </div>
         </div>
       </div>
+       <div className="border-t border-emerald-900">
+        <div className="mx-auto flex max-w-7xl flex-row gap-3 px-12 py-6 text-center md:px-40 md:flex-row md:items-center md:justify-between md:text-left lg:px-75">
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
 
+                return (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    className="flex h-12 w-12 items-center justify-center rounded-full border-3 border-emerald-300 text-emerald-100 transition hover:border-lime-400 hover:bg-lime-400 hover:text-emerald-950 md:h-12 md:w-12 lg:h-12 lg:w-12"
+                  >
+                    <Icon className="h-6 w-6 md:h-6 md:w-6 lg:h-6 lg:w-6" />
+                  </a>
+                );
+              })}
+        </div>
+      </div>
       {/* Copyright */}
       <div className="border-t border-emerald-900">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-5 py-6 text-center sm:px-6 md:flex-row md:items-center md:justify-between md:text-left lg:px-8">
@@ -186,14 +178,14 @@ export default function SiteFooter() {
               href="/privacy-policy"
               className="transition hover:text-lime-400"
             >
-              Privacy Policy
+              Website Designed by Nels-Script Tech:
             </Link>
 
             <Link
               href="/terms"
               className="transition hover:text-lime-400"
             >
-              Terms of Use
+              +234 7066 6526 26
             </Link>
           </div>
         </div>

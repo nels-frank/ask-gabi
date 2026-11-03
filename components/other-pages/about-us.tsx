@@ -4,7 +4,9 @@
 import { motion } from "framer-motion";
 import {
   Code2,
+  Globe2,
   Rocket,
+  Target,
   UserRound,
 } from "lucide-react";
 import Image from "next/image";
@@ -29,7 +31,7 @@ export default function AboutUs() {
         >
           <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
             <Code2 className="h-4 w-4" />
-            Ask Gabi
+            ASK GABI
           </div>
 
           <h1 className="text-left text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-3xl">
@@ -42,6 +44,7 @@ export default function AboutUs() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
             transition={{ duration: 0.7, delay: 0.15 }}
             className="my-6 flex w-full min-w-0 justify-center md:my-8 lg:hidden"
           >
@@ -60,35 +63,35 @@ export default function AboutUs() {
             </div>
           </motion.div>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
             I am Gabriel Obekpa, a Nigerian professional footballer
             and the founder of ASK GABI. My journey through
             professional football has taught me lessons that go
             far beyond the pitch.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
             I created ASK GABI to share those lessons and help
             young African footballers make better-informed
             decisions about their careers.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
             I realised that talented footballers can face
             difficult situations not because they lack ability,
             but because they lack access to reliable information.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
             I have experienced situations I would have approached
             differently if I had understood more at the time.
             ASK GABI is my way of sharing those experiences and
             helping young players become better informed.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
             I do not claim to have every answer. I believe in
-            learning, asking questions and recognxising the
+            learning, asking questions and recognizing the
             importance of informed decisions.
           </p>
 
@@ -97,7 +100,7 @@ export default function AboutUs() {
             questions, keep learning and make informed decisions.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
             ASK GABI was created to turn real experiences into
             useful knowledge for the next generation of footballers.
           </p>
@@ -169,7 +172,7 @@ export default function AboutUs() {
                     A Dream That Became a Learning Experience
                   </h3>
 
-                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                     Like many young Nigerian footballers, I grew up
                     dreaming of becoming a professional and playing
                     in Europe. I was naturally a creative midfielder
@@ -177,7 +180,7 @@ export default function AboutUs() {
                     making the decisive pass.
                   </p>
 
-                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                     My opportunity to move to Europe came through
                     Serbia. My family made significant financial
                     sacrifices to support the journey. We believed
@@ -193,7 +196,7 @@ export default function AboutUs() {
                     replace careful judgement.
                   </p>
 
-                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
                     I also learned the importance of discipline,
                     adaptability and continuous growth. These
                     experiences shaped not only my approach to
@@ -202,105 +205,111 @@ export default function AboutUs() {
                   </p>
 
                   {/* Personal Values */}
-                  <div className="my-8 rounded-xl border-l-4 border-green-600 bg-green-50 p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="mt-1">
-                        <Rocket className="h-6 w-6 text-green-700" />
-                      </div>
-
-                      <div>
-                        <h3 className="text-xl font-bold text-slate-900">
-                          How I See Football
-                        </h3>
-
-                        <p className="text-xl text-justify font-bold leading-7 md:text-base md:leading-8 text-slate-600">
-                          Talent can open a door. Discipline,
-                          adaptability and informed decisions help
-                          you navigate what comes next.
-                        </p>
-                      </div>
+                  <div className="my-8 rounded-xl border-l-4 border-green-600 bg-green-50 p-3">
+                  <div className="mb-2 flex items-center gap-3">
+                    <div className="rounded-lg bg-green-600 p-2">
+                      <Rocket className="h-5 w-5 text-white" />
                     </div>
+
+                    <h3 className="text-2xl font-bold text-slate-900">
+                      How I See Football
+                    </h3>
                   </div>
+
+                  <p className="text-xl text-justify font-bold leading-7 text-slate-600 md:text-xl md:leading-8">
+                    Talent can open a door. Discipline, adaptability and informed decisions
+                    help you navigate what comes next.
+                  </p>
+                </div>
                 </div>
               </div>
 
               {/* Where I Am Today */}
-              <div className="border-t border-slate-200 p-4 md:p-4">
-                <div className="flex items-start gap-4">
-                  <div className="mt-6 rounded-full bg-green-100 p-3">
-                    <UserRound className="h-8 w-8 text-green-600" />
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-900">
-                      Where I Am Today
-                    </h3>
-
-                    <p className="text-l text-justify font-bold leading-7 md:text-base md:leading-8 text-slate-600">
-                      Today, I remain focused on growing as a
-                      professional footballer while using my
-                      experiences to create something meaningful
-                      beyond the pitch. Through ASK GABI, I want
-                      young African footballers to have access to
-                      useful knowledge that can help them approach
-                      their careers with greater confidence.
-                    </p>
-                  </div>
+              <div className="border-t border-slate-200 p-3 md:p-6">
+              <div className="mb-2 flex items-center gap-3">
+                <div className="rounded-lg bg-green-600 p-2">
+                  <UserRound className="h-5 w-5 text-white" />
                 </div>
+                <h3 className="text-2xl font-bold text-slate-900">
+                  Where I Am Today
+                </h3>
               </div>
+
+              <p className="text-xl text-justify font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
+                Today, I remain focused on growing as a professional footballer while
+                using my experiences to create something meaningful beyond the pitch.
+                Through ASK GABI, I want young African footballers to have access to
+                useful knowledge that can help them approach their careers with greater
+                confidence.
+              </p>
+            </div>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* VISION & MISSION */}
-      <section className="bg-lime-50 px-6 py-10 sm:py-6 lg:px-12">
-        <div className="mx-auto max-w-7xl">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
-            <Code2 className="h-4 w-4" />
-              The Future We Are Building
+        {/* VISION & MISSION */}
+        <section className="bg-lime-50 px-6 py-10 sm:py-6 lg:px-12">
+          <div className="mx-auto max-w-7xl">
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
+              <Code2 className="h-4 w-4" />
+                The Future We Are Building
+              </div>
+              <h1 className="text-left text-xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
+                A more informed generation of footballers
+              </h1>
+            <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
+
+            <div className="grid gap-6 md:grid-cols-2">
+    <article className="group relative overflow-hidden rounded-2xl border border-emerald-100 bg-gradient-to-br from-white via-white to-emerald-50 p-5 shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7">
+      <div className="absolute right-0 top-0 h-28 w-28 -translate-y-1/3 translate-x-1/3 rounded-full bg-emerald-100/70 transition-transform duration-500 group-hover:scale-150" />
+
+      <div className="relative">
+        <div className="mb-5 flex items-center gap-3">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-800 text-white shadow-md">
+            <Globe2 className="h-6 w-6" />
+          </div>
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-800">
+              Our Vision
+            </p>
+            <div className="mt-1 h-1 w-12 rounded-full bg-lime-500" />
+          </div>
+        </div>
+
+        <p className="text-justify text-xl font-bold leading-7 text-slate-700 sm:text-xl sm:leading-8">
+          To become a trusted global football platform that empowers players
+          with the knowledge, guidance and opportunities they need to navigate
+          their careers, while building a reliable bridge between players and
+          qualified professionals.
+        </p>
+      </div>
+    </article>
+
+    <article className="group relative overflow-hidden rounded-2xl border border-emerald-800 bg-gradient-to-br from-emerald-950 via-emerald-900 to-green-800 p-5 text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7">
+      <div className="absolute right-0 top-0 h-32 w-32 -translate-y-1/3 translate-x-1/3 rounded-full bg-lime-400/10 transition-transform duration-500 group-hover:scale-150" />
+      <div className="absolute bottom-0 right-0 h-24 w-24 translate-x-1/3 translate-y-1/3 rounded-full bg-white/5" />
+        <div className="relative">
+          <div className="mb-5 flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-lime-400 text-emerald-950 shadow-md">
+              <Target className="h-6 w-6" />
             </div>
-            <h1 className="text-left text-xl font-bold tracking-tight text-gray-900 sm:text-3xl md:text-4xl">
-              A more informed generation of footballers
-            </h1>
-           <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
-
-          <div className="grid gap-6 md:grid-cols-2">
-            <article className="rounded-2xl bg-white p-3 shadow-sm sm:p-4">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-800">
-                Our Vision
-              </p>
-
-              <h3 className="mt-4 text-2xl font-bold">
-                Where we want to go
-              </h3>
-
-              <p className="mt-5 text-xl leading-7 text-justify font-bold text-slate-600 sm:text-lg sm:leading-8">
-                To become a trusted global football platform that
-                empowers players with the knowledge, guidance and
-                opportunities they need to navigate their careers,
-                while building a reliable bridge between players
-                and qualified professionals.
-              </p>
-            </article>
-
-            <article className="rounded-2xl bg-emerald-950 p-3 text-white shadow-sm sm:p-4">
+            <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-lime-400">
                 Our Mission
               </p>
-
-              <h3 className="mt-4 text-2xl font-bold">
-                What we aim to do
-              </h3>
-
-              <p className="mt-5 text-l leading-7 text-justify font-bold text-white sm:text-lg sm:leading-8">
-                To educate, guide and support African footballers,
-                especially Nigerian players, through trusted
-                knowledge, real-life experiences and access to
-                appropriate professional help.
-              </p>
-            </article>
+              <div className="mt-1 h-1 w-12 rounded-full bg-lime-400" />
+            </div>
           </div>
+
+          <p className="text-justify text-xl font-bold leading-7 text-white sm:text-xl sm:leading-8">
+            To educate, guide and support African footballers, especially
+            Nigerian players, through trusted knowledge, real-life experiences
+            and access to appropriate professional help.
+          </p>
+        </div>
+      </article>
+    </div>
         </div>
       </section>
     </main>

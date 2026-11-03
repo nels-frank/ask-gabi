@@ -41,7 +41,7 @@ export default function FloatingAskGabi() {
       rel="noopener noreferrer"
       aria-label="Ask Gabi on WhatsApp"
       title="Ask Gabi on WhatsApp"
-      className="fixed bottom-6 right-5 z-50 inline-flex h-14 items-center justify-center gap-2 border border-white/40 overflow-hidden rounded-full bg-green-950 px-4 font-extrabold text-white shadow-xl transition-all duration-300 ease-in-out hover:bg-emerald-400 hover:shadow-2xl hover:text-[#003d2b] sm:bottom-8 sm:right-8"
+      className="fixed bottom-16 right-5 z-50 inline-flex h-14 items-center justify-center gap-2 border border-white/40 overflow-hidden rounded-full bg-green-950 px-4 font-extrabold text-white shadow-xl transition-all duration-300 ease-in-out hover:bg-emerald-400 hover:shadow-2xl hover:text-[#003d2b] sm:bottom-8 sm:right-8"
     >
       <FaWhatsapp className="h-7 w-7 shrink-0" />
 
