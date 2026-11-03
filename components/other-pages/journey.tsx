@@ -146,107 +146,41 @@ export default function Journey() {
   return (
     <main className="min-h-screen bg-slate-50">
       {/* Contact introduction */}
-      <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-5 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
-      <div className="relative mx-auto max-w-7xl px-0 py-6 md:py-6 lg:px-10 lg:py-6">
-        <div className="absolute -right-2 -top-70 h-100 w-85 bg-green-600 blur-3xl md:bg-green-700 md:blur-3xl md:h-120 md:w-130 lg:bg-green-700 lg:blur-3xl lg:h-120 lg:w-130" />
-        <div className="absolute -bottom-160 -left-60 h-46 w-66 bg-green-700 blur-3xl md:-bottom-70 md:-left-60 md:h-96 md:w-66 md:bg-green-700 md:blur-3xl lg:bg-green-700 lg:blur-3xl" />
-      </div>
+      
+      <section className="relative mx-auto mt-21 w-full max-w-7xl overflow-hidden rounded-2xl bg-white px-4 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl sm:px-5 md:px-10 md:py-0 lg:py-0">
+        <div className="relative mx-auto max-w-7xl px-0 py-6 md:py-6 lg:px-10 lg:py-6">
+          <div className="absolute -right-2 -top-70 h-100 w-85 bg-green-600 blur-3xl md:bg-green-700 md:blur-3xl md:h-120 md:w-130 lg:bg-green-700 lg:blur-3xl lg:h-120 lg:w-130" />
+          <div className="absolute -bottom-160 -left-60 h-46 w-66 bg-green-700 blur-3xl md:-bottom-70 md:-left-60 md:h-96 md:w-66 md:bg-green-700 md:blur-3xl lg:bg-green-700 lg:blur-3xl" />
+        </div>
 
-        <div className="relative grid items-center gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-               className="mb-2 text-left lg:col-start-1 lg:row-start-1"
-            >
-              <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
-                <BiFootball className="h-4 w-4" />
-                My Football Journey
-              </div>
-
-              <h1 className="text-left text-2xl font-bold tracking-tight text-gray-900 lg:text-3xl md:text-4xl">
-                Every Journey Teaches you Something.
-              </h1>
-
-              <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
-
-              {/* Profile Picture: Mobile and Tablet */}
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.7, delay: 0.15 }}
-                className="my-8 flex justify-left lg:hidden"
-              >
-                <div className="relative h-120 w-86 md:h-175 md:w-105">
-                  <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
-                  <div className="relative h-120 w-85 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl md:h-175 md:w-105 lg:h-175 lg:w-155">
-                    <Image
-                      src="/images/10.webp"
-                      alt="Gabriel Obekpa reflecting on his football journey"
-                      fill
-                      priority
-                      sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 456px"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </motion.div>
-              
-              <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
-                From Nigeria to professional football in Europe, my journey has
-                taught me valuable lessons about ambition, sacrifice, adaptation
-                and the realities of pursuing a football career abroad.
-              </p>
-
-              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
-                Along the way, I experienced situations that made me realise how
-                important it is for young players to ask questions and understand
-                the opportunities they are pursuing.
-              </p>
-
-              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
-                Is it a trial or a guaranteed contract? Who is arranging the
-                opportunity? What costs are involved? Are the terms clear?
-              </p>
-
-              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
-                These experiences inspired me to create ASK GABI; a platform where
-                young footballers can ask questions, learn from my journey and
-                find qualified professional support when they need expertise
-                beyond my own experience.
-              </p>
-
-              <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
-                You don’t need to know everything. You need access to people who do.
-              </p>
-
-            <div className="my-6 rounded-xl border-l-4 border-green-600 bg-green-50 p-3 sm:p-6">
-            <div className="mb-2 flex items-center gap-3">
-              <div className="rounded-lg bg-green-600 p-2">
-                <Rocket className="h-5 w-5 text-white" />
-              </div>
-              <h4 className="text-l font-bold text-slate-900">
-                One lesson that stayed with me
-              </h4>
+        <div className="relative grid w-full min-w-0 items-center gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="mb-2 min-w-0 text-left lg:col-start-1 lg:row-start-1"
+          >
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
+              <BiFootball className="h-4 w-4" />
+              My Football Journey
             </div>
 
-            <p className="text-xl font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
-              Talent can open a door. Discipline, adaptability and informed decisions
-              help you navigate what comes next.
-            </p>
-          </div>
-            </motion.div>
+            <h1 className="text-left text-2xl font-bold tracking-tight text-gray-900 md:text-4xl lg:text-3xl">
+              Every Journey Teaches you Something.
+            </h1>
 
-            {/* Profile Picture: Desktop */}
+            <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
+
+            {/* Profile Picture: Mobile and Tablet */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.15 }}
-              className="hidden justify-center lg:col-start-2 lg:row-start-1 lg:flex lg:justify-end"
+              className="my-8 flex w-full justify-center lg:hidden"
             >
-              <div className="relative h-155 w-124">
-                <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
-                <div className="relative h-155 w-124 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl">
+              <div className="relative h-[480px] w-full max-w-[344px] sm:h-[600px] sm:max-w-[420px]">
+                <div className="absolute -right-2 -top-2 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
+                <div className="relative h-full w-full overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl">
                   <Image
                     src="/images/10.webp"
                     alt="Gabriel Obekpa reflecting on his football journey"
@@ -258,8 +192,77 @@ export default function Journey() {
                 </div>
               </div>
             </motion.div>
+
+            <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              From Nigeria to professional football in Europe, my journey has
+              taught me valuable lessons about ambition, sacrifice, adaptation
+              and the realities of pursuing a football career abroad.
+            </p>
+
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              Along the way, I experienced situations that made me realise how
+              important it is for young players to ask questions and understand
+              the opportunities they are pursuing.
+            </p>
+
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              Is it a trial or a guaranteed contract? Who is arranging the
+              opportunity? What costs are involved? Are the terms clear?
+            </p>
+
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              These experiences inspired me to create ASK GABI; a platform where
+              young footballers can ask questions, learn from my journey and
+              find qualified professional support when they need expertise
+              beyond my own experience.
+            </p>
+
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              You don’t need to know everything. You need access to people who do.
+            </p>
+
+            <div className="my-6 rounded-xl border-l-4 border-green-600 bg-green-50 p-3 sm:p-6">
+              <div className="mb-2 flex items-center gap-3">
+                <div className="rounded-lg bg-green-600 p-2">
+                  <Rocket className="h-5 w-5 text-white" />
+                </div>
+                <h4 className="text-base font-bold text-slate-900">
+                  One lesson that stayed with me
+                </h4>
+              </div>
+
+              <p className="text-xl font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
+                Talent can open a door. Discipline, adaptability and informed decisions
+                help you navigate what comes next.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Profile Picture: Desktop */}
+          {/* Desktop Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="hidden justify-center lg:col-start-2 lg:row-start-1 lg:flex lg:justify-end"
+          >
+            <div className="relative h-155 w-124">
+              <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
+              <div className="relative h-155 w-124 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl">
+                <Image
+                  src="/images/10.webp"
+                  alt="Gabriel Obekpa reflecting on his football journey"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 456px"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
+
 
       {/* CAREER TIMELINE */}
       <section className="relative mx-auto mt-21 max-w-7xl overflow-hidden rounded-2xl bg-white px-2 py-0 shadow-sm ring-1 ring-green-950/5 sm:rounded-3xl md:px-10 md:py-0 lg:py-0">
@@ -419,7 +422,7 @@ export default function Journey() {
       {/* LESSONS */}
       <section className="mt-4 px-6 py-3 md:px-10 lg:px-16">
         <div className="mx-auto max-w-7xl">
-          <div className="mt-6 mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-3 py-1 text-sm font-bold text-white">
+          <div className="mt-6 mb-5 inline-flex items-center gap-2 rounded-full bg-green-950 px-5 py-1 text-sm font-bold text-white">
             <GraduationCap className="h-4 w-4" />
             Lessons Along the Way
           </div>
