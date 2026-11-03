@@ -248,7 +248,7 @@ export default function Journey() {
                 <div className="absolute -right-3 -top-3 h-full w-full rounded-3xl bg-green-950 sm:-right-4 sm:-top-4" />
                 <div className="relative h-155 w-124 overflow-hidden rounded-3xl border-4 border-white bg-green-100 shadow-xl">
                   <Image
-                    src="/images/journeymenu.jpg"
+                    src="/images/10.webp"
                     alt="Gabriel Obekpa reflecting on his football journey"
                     fill
                     priority
