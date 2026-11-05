@@ -45,7 +45,7 @@ export default function PlayerBehindAskGabi() {
 
           <div className="mb-7 mt-1 h-1.5 w-20 rounded-full bg-gradient-to-r from-emerald-900 to-lime-500" />
 
-          <div className="max-w-4xl space-y-5 text-justify text-xl font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
+          <div className="max-w-4xl space-y-5 text-justify text-xl font-bold leading-7 text-slate-600 sm:text-2xl sm:leading-8">
             <p>
               Gabriel Obekpa is a Nigerian professional footballer whose
               journey has taken him from Nigeria to professional football

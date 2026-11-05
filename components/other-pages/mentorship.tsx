@@ -137,21 +137,21 @@ export default function MentorshipPage() {
 
               <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
 
-              <p className="mt-4 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              <p className="mt-4 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
                 Football is more than talent, training, and what happens
                 on the pitch. The decisions you make about agents,
                 contracts, trials, and your future can shape your entire
                 career.
               </p>
 
-              <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
                 Through ASK GABI, I want to share lessons from my own
                 professional football journey and help young African
                 footballers ask better questions, understand their
                 options, and make informed decisions.
               </p>
 
-              <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
                 I may not have every answer, but I believe every player
                 deserves access to useful knowledge and the right
                 professional support when it matters.
@@ -230,7 +230,7 @@ export default function MentorshipPage() {
 
               <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
 
-              <div className="mt-4 space-y-3 text-xl text-justify font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              <div className="mt-4 space-y-3 text-xl text-justify font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
                 <p>
                   Many talented footballers work hard for the chance to
                   play professionally, yet still face difficult decisions
@@ -311,7 +311,7 @@ export default function MentorshipPage() {
 
               <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
 
-              <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+              <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
                 My career has become a classroom. These are some of the
                 important subjects I want to discuss with young African
                 footballers as they navigate their own journeys.
@@ -456,7 +456,7 @@ export default function MentorshipPage() {
 
             <div className="mt-3 h-1 w-16 rounded-full bg-lime-400" />
 
-            <p className="mt-4 text-xl font-bold leading-7 text-emerald-50/80 sm:text-xl sm:leading-8">
+            <p className="mt-4 text-xl font-bold leading-7 text-emerald-50/80 sm:text-2xl sm:leading-8">
               Football involves more than what happens on the pitch.
               Some situations require expertise beyond my own experience.
               ASK GABI aims to help players identify the type of professional
@@ -527,7 +527,7 @@ export default function MentorshipPage() {
               Have a question about your football journey?
             </h2>
 
-            <p className="mx-auto mt-4 max-w-4xl text-xl font-bold leading-7 text-slate-600 sm:text-left sm:text-xl sm:leading-8">
+            <p className="mx-auto mt-4 max-w-4xl text-xl font-bold leading-7 text-slate-600 sm:text-left sm:text-2xl sm:leading-8">
               Start by asking. Share what you are trying to understand,
               learn from the experience I can offer, and identify when
               further professional guidance may be helpful.

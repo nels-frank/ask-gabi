@@ -1,7 +1,6 @@
 
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import {
@@ -11,6 +10,9 @@ import {
   Trophy,
   UserRound,
 } from "lucide-react";
+
+// TODO: replace with your WhatsApp link, e.g. "https://wa.me/234XXXXXXXXXX?text=Hello%20Gabi"
+const WHATSAPP_LINK = "#";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 25 },
@@ -76,7 +78,7 @@ export default function HeroSection() {
       {/* Subtle diagonal design */}
       <div className="pointer-events-none absolute -left-24 top-0 h-full w-[42%] -skew-x-12 bg-white/[0.025]" />
 
-      <div className="relative mx-auto flex min-h-[500px] w-full max-w-[1440px] items-center px-5 pb-2 pt-26 md:pt-0 sm:min-h-[700px] sm:px-8 lg:min-h-[800px] lg:px-10 lg:pb-2 lg:pt-2">
+      <div className="relative mx-auto flex min-h-[500px] w-full max-w-[1440px] items-center px-5 pb-2 pt-26 md:pt-28 sm:min-h-[700px] sm:px-8 lg:min-h-[800px] lg:px-10 lg:pb-2 lg:pt-18">
 
         {/* Hero Content */}
         <motion.div
@@ -114,43 +116,80 @@ export default function HeroSection() {
           {/* Supporting Text */}
           <motion.p
             variants={fadeUp}
-            className="mt-6 max-w-[600px] text-[20px] text-justify font-bold leading-7 text-white/90 sm:text-[20px] sm:leading-8 lg:text-[20px]"
+            className="mb-5 mt-6 max-w-[600px] text-[23px] text-justify font-bold leading-7 text-white/90 md:mb-5 sm:text-[23px] sm:leading-8 lg:text-[23px]"
           >
             A professional football journey driven by discipline, experience,
             mentorship and the ambition to help the next generation reach their
             full potential.
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* Ask Gabi Card (replaces the two CTA buttons) */}
           <motion.div
             variants={fadeUp}
-            className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
+            className="relative mt-2 w-full max-w-[620px] overflow-hidden rounded-2xl border border-emerald-400/70 bg-gradient-to-br from-[#00432f]/95 via-[#003d2b]/95 to-[#00271c]/95 p-4 shadow-[0_0_28px_rgba(52,211,153,0.25)] backdrop-blur-md sm:p-5"
           >
-            <Link
-              href="#journey"
-              className="group inline-flex min-h-[52px] items-center justify-center gap-2 rounded-md bg-emerald-400 px-7 text-[16px] font-extrabold text-[#003d2b] shadow-lg shadow-emerald-950/20 transition-all duration-200 hover:bg-emerald-300 hover:shadow-xl"
-            >
-              Explore the Journey
+            {/* Decorative corner curves */}
+            <div className="pointer-events-none absolute -bottom-20 -right-14 h-44 w-44 rounded-full bg-emerald-400/10" />
+            <div className="pointer-events-none absolute -bottom-28 -right-8 h-52 w-52 rounded-full border border-emerald-400/25" />
 
+            <div className="relative flex items-center gap-2 sm:gap-5">
+              {/* Chat bubbles icon */}
+              <div
+                aria-hidden="true"
+                className="relative h-16 w-20 shrink-0 sm:h-16 sm:w-20"
+              >
+                {/* Filled bubble with "?" */}
+                <div className="absolute left-0 top-0 flex h-10 w-14 items-center justify-center rounded-2xl rounded-bl-sm bg-emerald-400 text-xl font-black leading-none text-white shadow-lg shadow-emerald-950/30 sm:h-10 sm:w-14">
+                  ?
+                </div>
+
+                {/* Outlined bubble with dots */}
+                <div className="absolute bottom-0 right-0 flex h-9 w-12 items-center justify-center gap-[3px] rounded-full rounded-tr-sm border-2 border-emerald-400 bg-[#003d2b] sm:h-10 sm:w-14">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                </div>
+              </div>
+
+              {/* Divider */}
+              <div className="w-px self-stretch bg-white/20" />
+
+              {/* Text */}
+              <div className="min-w-0">
+                <h2 className="text-[18px] font-black uppercase leading-[1.1] tracking-[-0.01em] text-white sm:text-[24px]">
+                  Have questions about your{" "}
+                  <span className="text-emerald-400">football career?</span>
+                </h2>
+
+                <p className="mt-2 text-[16px] font-bold leading-5 text-white/65 sm:text-[18px]">
+                  Whether it&apos;s about agents, contracts, trials, or career
+                  decisions, you don&apos;t have to figure everything out alone.
+                </p>
+              </div>
+            </div>
+
+            {/* WhatsApp CTA */}
+            <div className="pl-12 sm:pl-30">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative mt-4 inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full bg-gradient-to-b from-emerald-300 to-emerald-500 px-20 sm:px-28 text-[14px] font-bold uppercase tracking-[-0.01em] text-black shadow-[0_0_20px_rgba(52,211,153,0.45)] transition-all duration-200 hover:from-emerald-200 hover:to-emerald-400 hover:shadow-[0_0_30px_rgba(52,211,153,0.6)] sm:min-h-[46px] sm:text-[14px]"
+            >
+              Ask Gabi Now
               <ArrowRight
-                size={19}
-                strokeWidth={2.8}
+                size={22}
+                strokeWidth={3}
                 className="transition-transform duration-200 group-hover:translate-x-1"
               />
-            </Link>
-
-            <Link
-              href="#mentorship"
-              className="inline-flex min-h-[52px] items-center justify-center rounded-md border-2 border-white/40 bg-white/5 px-7 text-[16px] font-extrabold text-white backdrop-blur-sm transition-all duration-200 hover:border-emerald-300 hover:bg-white/10 hover:text-emerald-300"
-            >
-              Discover Mentorship
-            </Link>
+            </a>
+            </div>
           </motion.div>
 
           {/* Trust / Identity Items */}
           <motion.div
             variants={staggerContainer}
-            className="mt-12 grid max-w-[680px] grid-cols-2 gap-5 border-t border-white/15 pt-4 sm:grid-cols-3 sm:gap-0"
+            className="mb-3 md:mb-10 mt-4 grid max-w-[680px] grid-cols-2 gap-5 border-t border-white/15 pt-4 sm:grid-cols-3 sm:gap-0"
           >
 
             <motion.div

@@ -79,7 +79,7 @@ export default function WhyAskGabi() {
 
             <div className="mb-5 mt-1 h-1.5 w-20 rounded-full bg-green-950" />
 
-            <div className="mt-6 max-w-3xl space-y-5 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
+            <div className="mt-6 max-w-3xl space-y-5 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-2xl sm:leading-8">
               <p>
                 Professional football has taught me that talent is only
                 one part of building a career. Contracts, agents, trials,
@@ -178,7 +178,7 @@ export default function WhyAskGabi() {
             </h3>
           </div>
 
-          <p className="text-left text-xl font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
+          <p className="text-left text-xl font-bold leading-7 text-slate-600 sm:text-2xl sm:leading-8">
             Ask questions. Learn from experience. Make informed decisions.
           </p>
         </motion.div>

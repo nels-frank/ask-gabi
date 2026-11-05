@@ -79,7 +79,7 @@ export default function ContactPage() {
 
             <div className="mt-3 h-1 w-16 rounded-full bg-green-950" />
 
-            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
               Every football journey comes with questions. Whether you are
               an aspiring player looking for direction or someone who wants
               to learn from the professional game, ASK GABI is here to help
@@ -167,7 +167,7 @@ export default function ContactPage() {
           <h2 className="mt-2 text-2xl font-extrabold text-green-950 sm:text-3xl">
             Choose how to reach out
           </h2>
-          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
             Have a question about your football journey? Start with the
             option that works best for you.
           </p>

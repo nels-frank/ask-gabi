@@ -193,31 +193,31 @@ export default function Journey() {
               </div>
             </motion.div>
 
-            <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+            <p className="mt-4 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
               From Nigeria to professional football in Europe, my journey has
               taught me valuable lessons about ambition, sacrifice, adaptation
               and the realities of pursuing a football career abroad.
             </p>
 
-            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
               Along the way, I experienced situations that made me realise how
               important it is for young players to ask questions and understand
               the opportunities they are pursuing.
             </p>
 
-            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
               Is it a trial or a guaranteed contract? Who is arranging the
               opportunity? What costs are involved? Are the terms clear?
             </p>
 
-            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
               These experiences inspired me to create ASK GABI; a platform where
               young footballers can ask questions, learn from my journey and
               find qualified professional support when they need expertise
               beyond my own experience.
             </p>
 
-            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
               You don’t need to know everything. You need access to people who do.
             </p>
 
@@ -280,7 +280,7 @@ export default function Journey() {
               Every club taught me something
             </h3>
 
-            <p className="mt-2 max-w-4xl text-xl font-bold leading-7 text-slate-500 sm:text-xl sm:leading-8">
+            <p className="mt-2 max-w-4xl text-xl font-bold leading-7 text-slate-500 sm:text-2xl sm:leading-8">
               Different countries, different expectations and experiences
               shaped my understanding of professional football.
             </p>
@@ -344,7 +344,7 @@ export default function Journey() {
             </h3>
           </div>
 
-          <p className="text-xl font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
+          <p className="text-xl font-bold leading-7 text-slate-600 sm:text-2xl sm:leading-8">
             Each stage brought different expectations and decisions. These experiences
             helped me appreciate the importance of preparation, adaptability and
             understanding the professional side of football.
@@ -367,7 +367,7 @@ export default function Journey() {
                   From Africa to Europe
                 </h3>
       
-                <p className="mb-5 mt-2 max-w-4xl text-xl text-justify font-bold leading-7 text-slate-500 sm:text-xl sm:leading-8">
+                <p className="mb-5 mt-2 max-w-4xl text-xl text-justify font-bold leading-7 text-slate-500 sm:text-2xl sm:leading-8">
                   From my beginnings in Nigeria to professional football across
                   Europe, every chapter has brought new challenges, experiences,
                   and opportunities to grow.
@@ -433,7 +433,7 @@ export default function Journey() {
 
           <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
 
-          <p className="mt-2 max-w-3xl text-justify text-xl font-bold leading-7 text-slate-500 sm:text-xl sm:leading-8">
+          <p className="mt-2 max-w-3xl text-justify text-xl font-bold leading-7 text-slate-500 sm:text-2xl sm:leading-8">
             A football career involves more than talent and opportunity. These
             are some of the lessons I learnt.
           </p>

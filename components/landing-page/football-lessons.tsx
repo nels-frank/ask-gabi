@@ -133,7 +133,7 @@ export default function FootballLessons() {
 
           <motion.p
             variants={fadeUp}
-            className="mt-5 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8"
+            className="mt-5 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-2xl sm:leading-8"
           >
             Football has taught me that building a career is about more
             than what happens on the pitch. These are some of the lessons he

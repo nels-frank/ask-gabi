@@ -19,7 +19,7 @@ export default function FinalAskGabiCTA() {
         <div className="relative grid items-center gap-10 lg:grid-cols-[1fr_auto] lg:gap-16">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full border border-emerald-700 bg-emerald-900/70 px-4 text-sm font-semibold text-lime-400">
-              <Sparkles className="h-4 w-4" />
+              <Sparkles className="h-10 w-10" />
               Your Journey. Better Informed.
             </div>
 
@@ -30,7 +30,7 @@ export default function FinalAskGabiCTA() {
               </span>
             </h2>
 
-            <p className="mt-6 max-w-2xl text-xl text-left font-bold leading-7 text-emerald-100/80 sm:text-lg sm:leading-8">
+            <p className="mt-6 max-w-2xl text-xl text-left font-bold leading-7 text-emerald-100/80 sm:text-xl sm:leading-8">
               You have the talent. Now build the understanding to navigate
               your career with greater confidence. Learn from real
               experience, ask important questions and discover the support

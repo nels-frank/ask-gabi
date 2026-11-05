@@ -134,7 +134,7 @@ export default function WhatIWantToShare() {
 
           <motion.p
             variants={fadeUp}
-            className="mt-6 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8"
+            className="mt-6 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-2xl sm:leading-8"
           >
             A football career requires more than talent. Players also
             need the right information, guidance and professional support.
@@ -142,7 +142,7 @@ export default function WhatIWantToShare() {
 
           <motion.p
             variants={fadeUp}
-            className="text-xl text-justify font-bold leading-7 text-slate-600 sm:text-lg sm:leading-8"
+            className="text-xl text-justify font-bold leading-7 text-slate-600 sm:text-2xl sm:leading-8"
           >
             ASK GABI helps bridge that gap by helping players access and
             connect with qualified professionals when their situation
@@ -246,7 +246,7 @@ export default function WhatIWantToShare() {
                 You don’t need to have every answer. You need access to people who do.
               </h3>
 
-              <p className="mt-6 text-xl text-left font-bold leading-7 text-emerald-100/80 sm:text-base">
+              <p className="mt-6 text-xl text-left font-bold leading-7 text-emerald-100/80 sm:text-xl">
                 ASK GABI helps you find the right knowledge, guidance and professional support for your football journey.
               </p>
 

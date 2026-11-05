@@ -63,39 +63,39 @@ export default function AboutUs() {
             </div>
           </motion.div>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
             I am Gabriel Obekpa, a Nigerian professional footballer
             and the founder of ASK GABI. My journey through
             professional football has taught me lessons that go
             far beyond the pitch.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
             I created ASK GABI to share those lessons and help
             young African footballers make better-informed
             decisions about their careers.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
             I realised that talented footballers can face
             difficult situations not because they lack ability,
             but because they lack access to reliable information.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
             I have experienced situations I would have approached
             differently if I had understood more at the time.
             ASK GABI is my way of sharing those experiences and
             helping young players become better informed.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
             I do not claim to have every answer. I believe in
             learning, asking questions and recognizing the
             importance of informed decisions.
           </p>
 
-          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+          <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
             You don't need to know everything. You need to ask
             questions, keep learning and make informed decisions.
           </p>
@@ -156,7 +156,7 @@ export default function AboutUs() {
               <div className="p-4 md:p-6 lg:p-4 lg:pl-10">
                 {/* Story Image */}
                 <div className="relative mb-6 flex w-full min-w-0 justify-center lg:absolute lg:right-10 lg:top-30 lg:mb-0 lg:w-auto">
-                  <div className="relative h-[26rem] w-full max-w-[20rem] overflow-hidden rounded-2xl border-4 border-white shadow-xl sm:h-[29rem] sm:max-w-[22rem] md:h-[32rem] md:max-w-[24rem] lg:h-140 lg:w-122 lg:max-w-none">
+                  <div className="relative h-[26rem] w-full max-w-[20rem] overflow-hidden rounded-2xl border-4 border-white shadow-xl sm:h-[29rem] sm:max-w-[22rem] md:h-[32rem] md:max-w-[24rem] lg:h-160 lg:w-122 lg:max-w-none">
                     <Image
                       src="/images/story.jpg"
                       alt="Gabriel Obekpa reflecting on his football journey"
@@ -172,7 +172,7 @@ export default function AboutUs() {
                     A Dream That Became a Learning Experience
                   </h3>
 
-                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
                     Like many young Nigerian footballers, I grew up
                     dreaming of becoming a professional and playing
                     in Europe. I was naturally a creative midfielder
@@ -180,7 +180,7 @@ export default function AboutUs() {
                     making the decisive pass.
                   </p>
 
-                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
                     My opportunity to move to Europe came through
                     Serbia. My family made significant financial
                     sacrifices to support the journey. We believed
@@ -189,14 +189,14 @@ export default function AboutUs() {
                     prove myself through what was effectively a trial.
                   </p>
 
-                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-lg sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
                     That experience changed how I look at football
                     opportunities. It taught me to ask questions,
                     understand the details and never let excitement
                     replace careful judgement.
                   </p>
 
-                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+                  <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
                     I also learned the importance of discipline,
                     adaptability and continuous growth. These
                     experiences shaped not only my approach to
@@ -216,7 +216,7 @@ export default function AboutUs() {
                     </h3>
                   </div>
 
-                  <p className="text-xl text-justify font-bold leading-7 text-slate-600 md:text-xl md:leading-8">
+                  <p className="text-xl text-justify font-bold leading-7 text-slate-600 sm:text-2xl md:leading-8">
                     Talent can open a door. Discipline, adaptability and informed decisions
                     help you navigate what comes next.
                   </p>
@@ -235,7 +235,7 @@ export default function AboutUs() {
                 </h3>
               </div>
 
-              <p className="text-xl text-justify font-bold leading-7 text-slate-600 sm:text-xl sm:leading-8">
+              <p className="text-xl text-justify font-bold leading-7 text-slate-600 sm:text-2xl sm:leading-8">
                 Today, I remain focused on growing as a professional footballer while
                 using my experiences to create something meaningful beyond the pitch.
                 Through ASK GABI, I want young African footballers to have access to
@@ -277,7 +277,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <p className="text-justify text-xl font-bold leading-7 text-slate-700 sm:text-xl sm:leading-8">
+        <p className="text-justify text-xl font-bold leading-7 text-slate-700 sm:text-2xl sm:leading-8">
           To become a trusted global football platform that empowers players
           with the knowledge, guidance and opportunities they need to navigate
           their careers, while building a reliable bridge between players and
@@ -302,7 +302,7 @@ export default function AboutUs() {
             </div>
           </div>
 
-          <p className="text-justify text-xl font-bold leading-7 text-white sm:text-xl sm:leading-8">
+          <p className="text-justify text-xl font-bold leading-7 text-white sm:text-2xl sm:leading-8">
             To educate, guide and support African footballers, especially
             Nigerian players, through trusted knowledge, real-life experiences
             and access to appropriate professional help.

@@ -124,7 +124,6 @@ export default function VisualAndConnection() {
       <div className="pointer-events-none absolute -bottom-32 right-0 h-36 w-96 rounded-full bg-green-700 blur-3xl" />
 
       <div className="mx-auto w-full max-w-7xl px-3 sm:px-6 lg:px-5">
-
         {/* Section Introduction */}
         <motion.div
           className="mx-auto max-w-7xl"
@@ -156,7 +155,7 @@ export default function VisualAndConnection() {
 
           <motion.p
             variants={fadeUp}
-            className="mt-6 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-lg sm:leading-8"
+            className="mt-6 text-xl text-justify font-bold leading-7 text-slate-600 sm:text-2xl sm:leading-8"
           >
             Explore inspiring moments, behind-the-scenes insights and practical
             advice from Gabriel Obekpa and the ASK GABI community. Discover

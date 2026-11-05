@@ -18,12 +18,12 @@ import {
 import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 
 const clubs = [
-  { name: "Bodrum FK", slug: "bodrum-fk", photoCount: 32 },
-  { name: "FC Zimbru Chișinău", slug: "fc-zimbru-chisinau", photoCount: 13 },
+  { name: "Bodrum FK", slug: "bodrum-fk", photoCount: 25 },
+  { name: "FC Zimbru Chișinău", slug: "fc-zimbru-chisinau", photoCount: 22 },
   { name: "IMT Novi Beograd", slug: "imt-novi-beograd", photoCount: 5 },
-  { name: "Tekstilac Odžaci", slug: "tekstilac-odzaci", photoCount: 3 },
-  { name: "Dynamo Academica", slug: "dynamo-academica", photoCount: 1 },
-  { name: "Mladost Lučani", slug: "mladost-lucani", photoCount: 0 },
+  { name: "Tekstilac Odžaci", slug: "tekstilac-odzaci", photoCount: 4 },
+  { name: "Dynamo Academica", slug: "dynamo-academica", photoCount: 0 },
+  { name: "Mladost Lučani", slug: "mladost-lucani", photoCount: 1 },
 ] as const;
 
 type ClubName = (typeof clubs)[number]["name"];
@@ -52,14 +52,14 @@ const photos: Photo[] = clubs.flatMap((club) =>
   })),
 );
 
-const shortClips: VideoItem[] = Array.from({ length: 9 }, (_, index) => ({
+const shortClips: VideoItem[] = Array.from({ length: 13 }, (_, index) => ({
   id: `clip-${index + 1}`,
   src: `/videos/gallery/clip/clip-${String(index + 1).padStart(2, "0")}.mp4`,
   title: `Football Moment ${String(index + 1).padStart(2, "0")}`,
   category: "Short Clips",
 }));
 
-const highlights: VideoItem[] = Array.from({ length: 8 }, (_, index) => ({
+const highlights: VideoItem[] = Array.from({ length: 5 }, (_, index) => ({
   id: `highlight-${index + 1}`,
   src: `/videos/gallery/highlight/highlight-${String(index + 1).padStart(2, "0")}.mp4`,
   title: `Career Highlight ${index + 1}`,
@@ -139,7 +139,7 @@ export default function GalleryPage() {
 
             <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
 
-            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 lg:text-xl sm:leading-8">
+            <p className="mt-3 max-w-4xl text-justify text-xl font-bold leading-7 text-gray-600 lg:text-2xl sm:leading-8">
               Every match, every challenge and every experience has been part
               of my journey. Welcome to my gallery, where I share moments from
               my life in professional football, both on and off the pitch.
@@ -202,7 +202,7 @@ export default function GalleryPage() {
             Explore the Gallery
           </h2>
           <div className="mt-2 h-1 w-16 rounded-full bg-green-950" />
-          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-xl sm:leading-8">
+          <p className="mt-3 max-w-3xl text-justify text-xl font-bold leading-7 text-gray-600 sm:text-2xl sm:leading-8">
             Browse pictures from each club, along with short clips and career highlights.
             Select a club or video category to explore.
           </p>
