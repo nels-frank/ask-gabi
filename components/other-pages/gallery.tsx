@@ -18,9 +18,9 @@ import {
 import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 
 const clubs = [
-  { name: "Bodrum FK", slug: "bodrum-fk", photoCount: 25 },
-  { name: "FC Zimbru Chișinău", slug: "fc-zimbru-chisinau", photoCount: 22 },
-  { name: "IMT Novi Beograd", slug: "imt-novi-beograd", photoCount: 5 },
+  { name: "Bodrum FK", slug: "bodrum-fk", photoCount: 26 },
+  { name: "FC Zimbru Chișinău", slug: "fc-zimbru-chisinau", photoCount: 23 },
+  { name: "IMT Novi Beograd", slug: "imt-novi-beograd", photoCount: 6 },
   { name: "Tekstilac Odžaci", slug: "tekstilac-odzaci", photoCount: 4 },
   { name: "Dynamo Academica", slug: "dynamo-academica", photoCount: 0 },
   { name: "Mladost Lučani", slug: "mladost-lucani", photoCount: 1 },

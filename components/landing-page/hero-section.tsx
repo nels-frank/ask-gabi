@@ -85,7 +85,7 @@ export default function HeroSection() {
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          className="relative z-10 w-full max-w-[680px]"
+          className="relative z-10 w-full max-w-[700px]"
         >
 
           {/* Small Label */}
@@ -116,7 +116,7 @@ export default function HeroSection() {
           {/* Supporting Text */}
           <motion.p
             variants={fadeUp}
-            className="mb-5 mt-6 max-w-[600px] text-[20px] text-justify font-bold leading-7 text-white/90 md:mb-5 sm:text-[20px] sm:leading-8 lg:text-[20px]"
+            className="mb-5 mt-6 max-w-[600px] text-[18px] text-justify font-bold leading-7 text-white/90 md:mb-5 sm:text-[20px] sm:leading-8 lg:text-[20px]"
           >
             A professional football journey driven by discipline, experience,
             mentorship and the ambition to help the next generation reach their
@@ -156,7 +156,7 @@ export default function HeroSection() {
 
               {/* Text */}
               <div className="min-w-0">
-                <h2 className="text-[18px] font-black uppercase leading-[1.1] tracking-[-0.01em] text-white sm:text-[24px]">
+                <h2 className="text-[16px] font-black uppercase leading-[1.1] tracking-[-0.01em] text-white sm:text-[24px]">
                   Have questions about your{" "}
                   <span className="text-emerald-400">football career?</span>
                 </h2>
