@@ -116,7 +116,7 @@ export default function HeroSection() {
           {/* Supporting Text */}
           <motion.p
             variants={fadeUp}
-            className="mb-5 mt-6 max-w-[600px] text-[23px] text-justify font-bold leading-7 text-white/90 md:mb-5 sm:text-[23px] sm:leading-8 lg:text-[23px]"
+            className="mb-5 mt-6 max-w-[600px] text-[20px] text-justify font-bold leading-7 text-white/90 md:mb-5 sm:text-[20px] sm:leading-8 lg:text-[20px]"
           >
             A professional football journey driven by discipline, experience,
             mentorship and the ambition to help the next generation reach their
@@ -126,7 +126,7 @@ export default function HeroSection() {
           {/* Ask Gabi Card (replaces the two CTA buttons) */}
           <motion.div
             variants={fadeUp}
-            className="relative mt-2 w-full max-w-[620px] overflow-hidden rounded-2xl border border-emerald-400/70 bg-gradient-to-br from-[#00432f]/95 via-[#003d2b]/95 to-[#00271c]/95 p-4 shadow-[0_0_28px_rgba(52,211,153,0.25)] backdrop-blur-md sm:p-5"
+            className="relative mt-2 w-full max-w-[620px] overflow-hidden rounded-2xl border border-emerald-400/70 bg-gradient-to-br from-[#00432f]/95 via-[#003d2b]/95 to-[#00271c]/95 p-2 shadow-[0_0_28px_rgba(52,211,153,0.25)] backdrop-blur-md sm:p-5"
           >
             {/* Decorative corner curves */}
             <div className="pointer-events-none absolute -bottom-20 -right-14 h-44 w-44 rounded-full bg-emerald-400/10" />
@@ -161,7 +161,7 @@ export default function HeroSection() {
                   <span className="text-emerald-400">football career?</span>
                 </h2>
 
-                <p className="mt-2 text-[16px] font-bold leading-5 text-white/65 sm:text-[18px]">
+                <p className="mt-2 text-[12px] font-bold leading-5 text-white/65 sm:text-[16px]">
                   Whether it&apos;s about agents, contracts, trials, or career
                   decisions, you don&apos;t have to figure everything out alone.
                 </p>
@@ -174,7 +174,7 @@ export default function HeroSection() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative mt-4 inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full bg-gradient-to-b from-emerald-300 to-emerald-500 px-20 sm:px-28 text-[14px] font-bold uppercase tracking-[-0.01em] text-black shadow-[0_0_20px_rgba(52,211,153,0.45)] transition-all duration-200 hover:from-emerald-200 hover:to-emerald-400 hover:shadow-[0_0_30px_rgba(52,211,153,0.6)] sm:min-h-[46px] sm:text-[14px]"
+              className="group relative mt-4 inline-flex min-h-[48px] items-center justify-center gap-3 rounded-full bg-gradient-to-b from-emerald-300 to-emerald-500 px-14 sm:px-28 text-[14px] font-bold uppercase tracking-[-0.01em] text-black shadow-[0_0_20px_rgba(52,211,153,0.45)] transition-all duration-200 hover:from-emerald-200 hover:to-emerald-400 hover:shadow-[0_0_30px_rgba(52,211,153,0.6)] sm:min-h-[46px] sm:text-[14px]"
             >
               Ask Gabi Now
               <ArrowRight
